@@ -7,7 +7,11 @@ export default function(component) {
   set('[data-title]',data.name); set('[data-scope]',data.scope);
   set('[data-resolution]',`${data.settings.grid_spacing_m.toFixed(0)} m grid`);
   set('[data-catalog]',`${data.candidate_segments} candidate segments`);
-  audio.src=data.audio_url; seek.max=data.duration_s;
+  // Community Cloud embeds the app below /~/+/. Resolve backend media paths
+  // inside that document, preserving the hosting prefix used by its proxy.
+  audio.src=data.audio_url.startsWith('/media/')
+    ? new URL(`.${data.audio_url}`, document.baseURI).href : data.audio_url;
+  seek.max=data.duration_s;
   const map=q('[data-map]'), spectrum=q('[data-spectrum]'), specImage=new Image();
   specImage.src=data.spectrogram_png;
   const cyan='#55e5cf', text='#9db2c4';

@@ -3913,8 +3913,8 @@
     },
     {
       "path": "soundleak/live_frontend/dashboard.js",
-      "bytes": 10359,
-      "sha256": "65c680a3da5a91ebdfd66b0b294782bfefee3b01472eaeafc91b2ba6104460a1"
+      "bytes": 10612,
+      "sha256": "ed7d7d85cac43d0683ea0fd7ce947a81b00469a47b6d72925b9697e6fd9f467c"
     },
     {
       "path": "soundleak/physics.py",
@@ -3992,6 +3992,6 @@
       "sha256": "5b3372bf930ebe7beed5e31995ad876e45e3811881fcf91889a82f5108a5ddc6"
     }
   ],
-  "total_bytes": 555783922,
+  "total_bytes": 555784175,
   "excluded": "Virtualenv, raw daily tar parts, research scratch data, credentials, and private annotation/session files."
 }
