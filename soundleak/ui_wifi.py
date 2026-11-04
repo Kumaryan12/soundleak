@@ -68,7 +68,8 @@ def render_wifi():
         if raw:
             st.download_button('Download local capture CSV', raw, 'wifi-capture.csv', 'text/csv', on_click='ignore')
     else:
-        upload = st.file_uploader('Wi-Fi capture CSV · maximum 2 MB', type=['csv'], key='wifi_upload')
+        upload = st.file_uploader('Wi-Fi capture CSV · maximum 2 MB', type=['csv'],
+                                  max_upload_size=2, key='wifi_upload')
         if upload is not None:
             if upload.size > 2_000_000:
                 st.error('Wi-Fi captures are limited to 2 MB.')

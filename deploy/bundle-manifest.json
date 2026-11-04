@@ -28,8 +28,8 @@
     },
     {
       "path": "app.py",
-      "bytes": 16940,
-      "sha256": "90a595d9ab3b614ae8d2b29e82ae69d215eff751b66d8f16d0b50c5fe1258f63"
+      "bytes": 17074,
+      "sha256": "9890ddba5fd8de6a2fe54115a3c05035423dd6a71b4c104f9c7b7aa8daa8d6a6"
     },
     {
       "path": "data/real/models/yamnet-onnx/LICENSE",
@@ -3993,8 +3993,8 @@
     },
     {
       "path": "soundleak/ui_wifi.py",
-      "bytes": 7009,
-      "sha256": "8747ee2a931bb74ec2a5c95e86ed77667d4bb54d2aaa9daf958c37c72ffd0ecd"
+      "bytes": 7062,
+      "sha256": "69f3948cc7cf01956075da34dbefd7aa72b55a22e4d474d62ddf4c667c77147e"
     },
     {
       "path": "soundleak/ui_workbench.py",
@@ -4017,6 +4017,6 @@
       "sha256": "5b3372bf930ebe7beed5e31995ad876e45e3811881fcf91889a82f5108a5ddc6"
     }
   ],
-  "total_bytes": 555809531,
+  "total_bytes": 555809718,
   "excluded": "Virtualenv, raw daily tar parts, research scratch data, credentials, and private annotation/session files."
 }

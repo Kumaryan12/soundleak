@@ -244,4 +244,5 @@ else:
             st.error(str(exc))
 
 st.divider()
-st.caption("Research prototype · Automatic acoustic proposals with manual review · Finite regional fits, not calibrated location probabilities")
+st.caption("Research prototype · Wi-Fi RSSI diagnostics · Human presence and location are not inferred" if mode == "Wi-Fi lab" else
+           "Research prototype · Automatic acoustic proposals with manual review · Finite regional fits, not calibrated location probabilities")
