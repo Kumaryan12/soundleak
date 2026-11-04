@@ -7,6 +7,11 @@
       "sha256": "e968235a82784c17bcf0902e8ee7379b9774585b7d13237ba8b8d0be084e5e49"
     },
     {
+      "path": ".gitignore",
+      "bytes": 158,
+      "sha256": "9392326091a65518b44a6705f0a2667379e23054439c011cc960707375363052"
+    },
+    {
       "path": ".streamlit/config.toml",
       "bytes": 243,
       "sha256": "58a15c529a1a5e397e9895b73eda28653d648034ae12475196109706c0b5c069"
@@ -3987,6 +3992,6 @@
       "sha256": "5b3372bf930ebe7beed5e31995ad876e45e3811881fcf91889a82f5108a5ddc6"
     }
   ],
-  "total_bytes": 555783764,
+  "total_bytes": 555783922,
   "excluded": "Virtualenv, raw daily tar parts, research scratch data, credentials, and private annotation/session files."
 }
