@@ -8,3 +8,5 @@ __pycache__/
 /outputs/cases/*
 !/outputs/cases/reference-regional/
 /outputs/reviews/**/annotations/
+/outputs/wifi/
+wifi-capture*.csv

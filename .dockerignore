@@ -9,6 +9,9 @@
 !.streamlit/config.toml
 !soundleak/
 !soundleak/**
+!scripts/
+!scripts/capture_wifi.py
+!scripts/capture_wifi.swift
 !deploy/
 !deploy/requirements.txt
 !deploy/start.sh

@@ -3,13 +3,13 @@
   "files": [
     {
       "path": ".dockerignore",
-      "bytes": 1280,
-      "sha256": "e968235a82784c17bcf0902e8ee7379b9774585b7d13237ba8b8d0be084e5e49"
+      "bytes": 1343,
+      "sha256": "644fe02d3a9edb82e45f802eaaabe7c9ea7a16fa505bd5c94fb7d4c78c59ff95"
     },
     {
       "path": ".gitignore",
-      "bytes": 158,
-      "sha256": "9392326091a65518b44a6705f0a2667379e23054439c011cc960707375363052"
+      "bytes": 191,
+      "sha256": "269374e3ee3135b5938d73aa88bdbe2a422b6381bd0637808d79d746940ccc3f"
     },
     {
       "path": ".streamlit/config.toml",
@@ -23,13 +23,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 11923,
-      "sha256": "2823314d159846d3c2056342bdf8b94c391263a3fc70a81ced26e6aeacd6f072"
+      "bytes": 12211,
+      "sha256": "e6a903e5007d59587141779f7ae8e3273938f7624663db8c774b4576f09905df"
     },
     {
       "path": "app.py",
-      "bytes": 16421,
-      "sha256": "9439165e577ff1e40785dda96bfa33bb650cfb6a4069ae4f6fce8e874dfa05c8"
+      "bytes": 16940,
+      "sha256": "90a595d9ab3b614ae8d2b29e82ae69d215eff751b66d8f16d0b50c5fe1258f63"
     },
     {
       "path": "data/real/models/yamnet-onnx/LICENSE",
@@ -3337,6 +3337,11 @@
       "sha256": "bfd5d6333d4b14b93e8a782d3b7c8530f63902245ea9816e9a97f4da983ec676"
     },
     {
+      "path": "docs/wifi.md",
+      "bytes": 4363,
+      "sha256": "dd42ec757f7bea1eaf93c0e39e4d55b833d17cdeea5111e2a0b4f2ae05be4056"
+    },
+    {
       "path": "docs/workbench.md",
       "bytes": 9430,
       "sha256": "39bb80253e99ac0bcac289dd189c4d63f9acd3c5a9cbc9ab97fec90f91b4cef8"
@@ -3837,6 +3842,16 @@
       "sha256": "b0d1d33e6bdf27a047d75316c04db53983cb586169c137f5ded65bd636a821b6"
     },
     {
+      "path": "scripts/capture_wifi.py",
+      "bytes": 1860,
+      "sha256": "74732913f506035f3eb1ec7669796274dd2d9982012096116cd5f3a190b9fe9e"
+    },
+    {
+      "path": "scripts/capture_wifi.swift",
+      "bytes": 2074,
+      "sha256": "e7c729119055362f341bf9ef5ecc3e1aaace07ad8096cbc5ec58907aec40ab00"
+    },
+    {
       "path": "soundleak/__init__.py",
       "bytes": 78,
       "sha256": "df7cdcd09434e72dffb3e947a1bf386e03d1879c30506cbb874b6135419698e8"
@@ -3977,9 +3992,19 @@
       "sha256": "84c8dc3acc1f073273d868fe018297b5fd6b5ab67f17fecb9b15715a44b0af8d"
     },
     {
+      "path": "soundleak/ui_wifi.py",
+      "bytes": 7009,
+      "sha256": "8747ee2a931bb74ec2a5c95e86ed77667d4bb54d2aaa9daf958c37c72ffd0ecd"
+    },
+    {
       "path": "soundleak/ui_workbench.py",
       "bytes": 29185,
       "sha256": "cd6df2f6a5d13114cbaaeb2e007ad4945e2ddfd42c420014d58beaee4c65b303"
+    },
+    {
+      "path": "soundleak/wifi.py",
+      "bytes": 9147,
+      "sha256": "6bae16821b0a23f5d5f4043c030d44985f0014a84bfd600d00b3ea9d5bfeed7e"
     },
     {
       "path": "soundleak/workflow.py",
@@ -3992,6 +4017,6 @@
       "sha256": "5b3372bf930ebe7beed5e31995ad876e45e3811881fcf91889a82f5108a5ddc6"
     }
   ],
-  "total_bytes": 555784175,
+  "total_bytes": 555809531,
   "excluded": "Virtualenv, raw daily tar parts, research scratch data, credentials, and private annotation/session files."
 }

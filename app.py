@@ -86,21 +86,27 @@ def show_results(events, result, origin, altitude, truth=None):
 
 with st.sidebar:
     st.markdown("### ◉ Soundleak")
-    st.caption("AIRCRAFT DOPPLER LAB")
-    mode = st.radio("Experiment", ["Soundleak Live", "Research workbench", "Public recording review", "Real-world replay", "Synthetic demo", "Analyze recording"], key="experiment_mode")
+    mode = st.radio("Experiment", ["Soundleak Live", "Wi-Fi lab", "Research workbench", "Public recording review", "Real-world replay", "Synthetic demo", "Analyze recording"], key="experiment_mode")
+    st.caption("WI-FI SIGNAL EXPERIMENT" if mode == "Wi-Fi lab" else "AIRCRAFT DOPPLER LAB")
     st.divider()
     st.caption("Server-side analysis · no external inference API" if is_hosted() else "Local processing · no account needed")
-    st.write("Match the changing pitch of a flyover to a known flight path.")
+    st.write("Inspect signal variation on a stationary Wi-Fi link." if mode == "Wi-Fi lab" else
+             "Match the changing pitch of a flyover to a known flight path.")
 
-st.markdown('<div class="eyebrow">SOUND → MOTION → POSITION</div>', unsafe_allow_html=True)
-st.title("Soundleak Live" if mode == "Soundleak Live" else "Soundleak research workbench" if mode == "Research workbench" else
+st.markdown('<div class="eyebrow">' + ('WI-FI → LINK MEASUREMENTS → VARIATION' if mode == "Wi-Fi lab" else
+            'SOUND → MOTION → POSITION') + '</div>', unsafe_allow_html=True)
+st.title("Soundleak Live" if mode == "Soundleak Live" else "Wi-Fi signal lab" if mode == "Wi-Fi lab" else "Soundleak research workbench" if mode == "Research workbench" else
          "Public recording review" if mode == "Public recording review" else "A location hidden in the sound.")
 st.write("Hear the flyover. Follow the evidence. Watch the map update." if mode == "Soundleak Live" else
+         "Capture your Mac’s Wi-Fi link. Inspect signal changes against a static reference." if mode == "Wi-Fi lab" else
          "Review acoustic events, compare aircraft, and inspect competing locations." if mode == "Research workbench" else
          "Listen to each recording, inspect the extracted ridges, and save your judgments." if mode == "Public recording review" else
          "Trace an aircraft’s Doppler curve. Test where a listener would have heard it.")
 
-if mode == "Soundleak Live":
+if mode == "Wi-Fi lab":
+    from soundleak.ui_wifi import render_wifi
+    render_wifi()
+elif mode == "Soundleak Live":
     from soundleak.ui_live import render_live
     render_live()
 elif mode == "Research workbench":

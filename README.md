@@ -132,6 +132,11 @@ Assumptions: a stationary recorder, still air, constant sound speed, constant so
 
 ## Deploy
 
+The **Wi-Fi lab** accepts RSSI captures from a Mac and router and compares link
+variation with a declared static reference. Download the collector from the app,
+or see [the Wi-Fi experiment guide](docs/wifi.md). This experiment does not detect
+or locate people; it does not collect CSI.
+
 See [the hosting guide](docs/deployment.md) for Streamlit Community Cloud and
 Docker deployment. Use `streamlit_app.py` on Community Cloud to enable temporary,
 separate storage for each visitor's saved cases and review notes.
