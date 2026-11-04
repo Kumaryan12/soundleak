@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "manifest_sha256": "0e50e585263bf91c7074f35d0e44eec24c4f6af9f4bc8133e99ec04b63fdd216",
+  "state": "needs_input",
+  "declared_cases": 0,
+  "evaluated_cases": 0,
+  "eligible_independent_cases": 0,
+  "cases": [],
+  "failures": [],
+  "eligible_cases_with_returned_hypotheses": 0,
+  "eligible_diagnostic_within_m": {
+    "100": 0,
+    "500": 0,
+    "1000": 0
+  },
+  "eligible_status_counts": {
+    "candidate_fit": 0,
+    "partial_fit": 0,
+    "ambiguous": 0,
+    "insufficient_evidence": 0,
+    "not_searched": 0
+  },
+  "interpretation": "References enter post-fit evaluation only. Independence is an operator assertion requiring evidence. Diagnostic distance thresholds are not a success rate; unresolved and failed cases remain in the report."
+}

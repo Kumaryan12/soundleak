@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "case_id": "N563FX_R21",
+  "screen_report_sha256": "152253931eeff64f353a369b517b0a9bc00ee516696ae33c6adc3aa729375230",
+  "source_audio_sha256": "427a7575ec97a84feb8fe81f7fb8b1cff5a122e79223fba11d5327c0ba9e1179",
+  "measurements_sha256": "3b7861a26a2990560cc659fd0c01fc2bbae12cad474d7257050b5d26bacce749",
+  "discovery": {
+    "duration_s": 129.62939453125,
+    "scanned_windows": 2,
+    "raw_proposals": 3,
+    "elapsed_s": 0.24156899999798043,
+    "config": {
+      "window_s": 90.0,
+      "stride_s": 60.0,
+      "min_duration_s": 20.0,
+      "min_prominence_db": 12.0,
+      "min_drop_fraction": 0.08,
+      "max_fit_rmse_hz": 2.5,
+      "bands": [
+        [
+          40.0,
+          100.0
+        ],
+        [
+          70.0,
+          170.0
+        ],
+        [
+          120.0,
+          280.0
+        ],
+        [
+          200.0,
+          450.0
+        ],
+        [
+          350.0,
+          800.0
+        ]
+      ]
+    },
+    "events": [
+      {
+        "id": "event-487213b9",
+        "start_s": 74.25,
+        "end_s": 116.25,
+        "duration_s": 42.0,
+        "frequency_start_hz": 609.625,
+        "frequency_end_hz": 506.375,
+        "prominence_db": 22.496871948242188,
+        "grouped_proposals": 1,
+        "tone_fit_rmse_hz": 1.9442803234861559,
+        "trend_explained_fraction": 0.9946900498448499,
+        "fitted_tone_hz": 596.8267463384117,
+        "approx_cpa_receive_s": 76.5680130885105,
+        "fit_converged": true
+      },
+      {
+        "id": "event-2a86e01c",
+        "start_s": 98.25,
+        "end_s": 127.5,
+        "duration_s": 29.25,
+        "frequency_start_hz": 86.125,
+        "frequency_end_hz": 79.30904511362314,
+        "prominence_db": 20.081485748291016,
+        "grouped_proposals": 1,
+        "tone_fit_rmse_hz": 0.3940773051983269,
+        "trend_explained_fraction": 0.9730908463640406,
+        "fitted_tone_hz": 80.77331641834733,
+        "approx_cpa_receive_s": 122.59055407814645,
+        "fit_converged": true
+      },
+      {
+        "id": "event-42341f82",
+        "start_s": 99.0,
+        "end_s": 127.5,
+        "duration_s": 28.5,
+        "frequency_start_hz": 93.125,
+        "frequency_end_hz": 79.30904511362314,
+        "prominence_db": 28.367435455322266,
+        "grouped_proposals": 1,
+        "tone_fit_rmse_hz": 0.5397375547675285,
+        "trend_explained_fraction": 0.9905011453376485,
+        "fitted_tone_hz": 85.83718073614529,
+        "approx_cpa_receive_s": 116.0503344783151,
+        "fit_converged": true
+      }
+    ],
+    "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+  },
+  "analysis_code_sha256": {
+    "public_data.py": "0e2beba5137db4e226091fdfeba327e68df35a68bc0fc12e64e3a1e58fbd6c25",
+    "audio.py": "105b628c0d53dfa9fd60767e75ee84a5fc542584d0d4647d02199e0dbd77a079",
+    "discovery.py": "8c23272b97ac1651fba9e5a935b6d719a3efeba26b5093e58375fa5812649c1d"
+  },
+  "reconstruction": "Original WAV decoded with the saved detector configuration and unchanged audio/discovery code. All saved proposal metadata matched within numerical tolerance. Arrays were reconstructed; the original screening report contained summaries only."
+}

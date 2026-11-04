@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "case_id": "N394FX_R20",
+  "screen_report_sha256": "152253931eeff64f353a369b517b0a9bc00ee516696ae33c6adc3aa729375230",
+  "source_audio_sha256": "cfd03401b5f891020d76c12000a7552be0c549f65b8e67dc571f06258f0178ac",
+  "measurements_sha256": "75fc937e460aac575adb8e7c74032e18cfe172d97aeca6d99d0754d5b09f88f6",
+  "discovery": {
+    "duration_s": 60.52685546875,
+    "scanned_windows": 1,
+    "raw_proposals": 0,
+    "elapsed_s": 0.09260570900369203,
+    "config": {
+      "window_s": 90.0,
+      "stride_s": 60.0,
+      "min_duration_s": 20.0,
+      "min_prominence_db": 12.0,
+      "min_drop_fraction": 0.08,
+      "max_fit_rmse_hz": 2.5,
+      "bands": [
+        [
+          40.0,
+          100.0
+        ],
+        [
+          70.0,
+          170.0
+        ],
+        [
+          120.0,
+          280.0
+        ],
+        [
+          200.0,
+          450.0
+        ],
+        [
+          350.0,
+          800.0
+        ]
+      ]
+    },
+    "events": [],
+    "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+  },
+  "analysis_code_sha256": {
+    "public_data.py": "0e2beba5137db4e226091fdfeba327e68df35a68bc0fc12e64e3a1e58fbd6c25",
+    "audio.py": "105b628c0d53dfa9fd60767e75ee84a5fc542584d0d4647d02199e0dbd77a079",
+    "discovery.py": "8c23272b97ac1651fba9e5a935b6d719a3efeba26b5093e58375fa5812649c1d"
+  },
+  "reconstruction": "Original WAV decoded with the saved detector configuration and unchanged audio/discovery code. All saved proposal metadata matched within numerical tolerance. Arrays were reconstructed; the original screening report contained summaries only."
+}

@@ -1,0 +1,179 @@
+{
+  "created": "2026-10-16T19:57:29.193673+00:00",
+  "modified": "2026-10-16T20:05:46.158316+00:00",
+  "id": 23424278,
+  "conceptrecid": "23424276",
+  "doi": "10.5281/zenodo.23424278",
+  "conceptdoi": "10.5281/zenodo.23424276",
+  "doi_url": "https://doi.org/10.5281/zenodo.23424278",
+  "metadata": {
+    "title": "Aeroplane data full analysis and raw files",
+    "doi": "10.5281/zenodo.23424278",
+    "publication_date": "2026-10-16",
+    "description": "<p>This dataset accompanies the paper \"Aircraft speed and height from Doppler-shifted sound and flight-track data.\" It contains smartphone recordings of 40 aircraft passing over Livermore, California, in May 2026, together with the data and code used to estimate each aircraft's speed and height from the Doppler shift.</p>\n<p>For each passage, the dataset includes:</p>\n<ul>\n<li>the audio recording (WAV)</li>\n<li>the frequency&ndash;time data extracted from one harmonic of the aircraft sound (CSV, UTC time stamps)</li>\n<li>the aircraft's ADS-B flight track (KML, geometric altitude above mean sea level)</li>\n<li>a one-page summary of the analysis (PDF)</li>\n</ul>\n<p>Passages are grouped into four folders by whether the aircraft's speed and height stayed nearly constant or changed during the recording.</p>\n<p>The dataset also includes:</p>\n<ul>\n<li>a table of results for all 40 passages, giving speed, minimum distance and height from both analysis methods alongside the flight-track values</li>\n<li>a single PDF with all result pages</li>\n<li>the Frequency extraction tool</li>\n</ul>\n<p>Flight tracks come from public ADS-B services. The recordings and analysis files may be reused with attribution.</p>",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "pathak, praveen",
+        "affiliation": "Homi Bhabha Centre for Science Education",
+        "orcid": "0000-0002-0687-5321"
+      }
+    ],
+    "resource_type": {
+      "title": "Dataset",
+      "type": "dataset"
+    },
+    "license": {
+      "id": "cc-by-4.0"
+    },
+    "relations": {
+      "version": [
+        {
+          "index": 0,
+          "is_last": true,
+          "parent": {
+            "pid_type": "recid",
+            "pid_value": "23424276"
+          }
+        }
+      ]
+    }
+  },
+  "title": "Aeroplane data full analysis and raw files",
+  "links": {
+    "self": "https://zenodo.org/api/records/23424278",
+    "self_html": "https://zenodo.org/records/23424278",
+    "preview_html": "https://zenodo.org/records/23424278?preview=1",
+    "doi": "https://doi.org/10.5281/zenodo.23424278",
+    "self_doi": "https://doi.org/10.5281/zenodo.23424278",
+    "self_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23424278",
+    "reserve_doi": "https://zenodo.org/api/records/23424278/draft/pids/doi",
+    "parent": "https://zenodo.org/api/records/23424276",
+    "parent_html": "https://zenodo.org/records/23424276",
+    "parent_doi": "https://doi.org/10.5281/zenodo.23424276",
+    "parent_doi_html": "https://zenodo.org/doi/10.5281/zenodo.23424276",
+    "self_iiif_manifest": "https://zenodo.org/api/iiif/record:23424278/manifest",
+    "self_iiif_sequence": "https://zenodo.org/api/iiif/record:23424278/sequence/default",
+    "files": "https://zenodo.org/api/records/23424278/files",
+    "media_files": "https://zenodo.org/api/records/23424278/media-files",
+    "thumbnails": {
+      "10": "https://zenodo.org/api/iiif/record:23424278:frequency_vs_time_40_cases.pdf/full/%5E10,/0/default.jpg",
+      "50": "https://zenodo.org/api/iiif/record:23424278:frequency_vs_time_40_cases.pdf/full/%5E50,/0/default.jpg",
+      "100": "https://zenodo.org/api/iiif/record:23424278:frequency_vs_time_40_cases.pdf/full/%5E100,/0/default.jpg",
+      "250": "https://zenodo.org/api/iiif/record:23424278:frequency_vs_time_40_cases.pdf/full/%5E250,/0/default.jpg",
+      "750": "https://zenodo.org/api/iiif/record:23424278:frequency_vs_time_40_cases.pdf/full/%5E750,/0/default.jpg",
+      "1200": "https://zenodo.org/api/iiif/record:23424278:frequency_vs_time_40_cases.pdf/full/%5E1200,/0/default.jpg"
+    },
+    "latest": "https://zenodo.org/api/records/23424278/versions/latest",
+    "latest_html": "https://zenodo.org/records/23424278/latest",
+    "versions": "https://zenodo.org/api/records/23424278/versions",
+    "draft": "https://zenodo.org/api/records/23424278/draft",
+    "access_links": "https://zenodo.org/api/records/23424278/access/links",
+    "access_grants": "https://zenodo.org/api/records/23424278/access/grants",
+    "access_users": "https://zenodo.org/api/records/23424278/access/users",
+    "access_request": "https://zenodo.org/api/records/23424278/access/request",
+    "access": "https://zenodo.org/api/records/23424278/access",
+    "communities": "https://zenodo.org/api/records/23424278/communities",
+    "communities-suggestions": "https://zenodo.org/api/records/23424278/communities-suggestions",
+    "request_deletion": "https://zenodo.org/api/records/23424278/request-deletion",
+    "file_modification": "https://zenodo.org/api/records/23424278/file-modification",
+    "quota_increase": "https://zenodo.org/api/records/23424278/quota-increase",
+    "requests": "https://zenodo.org/api/records/23424278/requests"
+  },
+  "updated": "2026-10-16T20:05:46.158316+00:00",
+  "recid": "23424278",
+  "revision": 6,
+  "files": [
+    {
+      "id": "beb5df6e-e600-47cf-be52-11a4acd963ec",
+      "key": "Raw data_V_constant_H_constant.zip",
+      "size": 23096453,
+      "checksum": "md5:d34b32ae57477074d6e8563300a7fc19",
+      "links": {
+        "self": "https://zenodo.org/api/records/23424278/files/Raw%20data_V_constant_H_constant.zip/content"
+      }
+    },
+    {
+      "id": "37cd1bd9-5de8-45db-b953-f1bfb1961198",
+      "key": "final_results_40_cases.csv",
+      "size": 22047,
+      "checksum": "md5:69e5350d46a817f33c21c627ddebda77",
+      "links": {
+        "self": "https://zenodo.org/api/records/23424278/files/final_results_40_cases.csv/content"
+      }
+    },
+    {
+      "id": "04178001-54e3-43b0-bbe1-499e6bcea373",
+      "key": "Raw data_V_constant_H_varying.zip",
+      "size": 78526572,
+      "checksum": "md5:7dc6eb7cea1a8ee3a1e47b05e5340eb9",
+      "links": {
+        "self": "https://zenodo.org/api/records/23424278/files/Raw%20data_V_constant_H_varying.zip/content"
+      }
+    },
+    {
+      "id": "ed91f7f8-e7a6-4729-b80e-8d1997bfe107",
+      "key": "Raw data_V_varying_H_constant.zip",
+      "size": 9914340,
+      "checksum": "md5:1f6c6c3614d87882b1ace28e963fc272",
+      "links": {
+        "self": "https://zenodo.org/api/records/23424278/files/Raw%20data_V_varying_H_constant.zip/content"
+      }
+    },
+    {
+      "id": "8a613025-918a-474c-89f4-bcd8e11e99e4",
+      "key": "frequency_extraction_tool.html",
+      "size": 241257,
+      "checksum": "md5:e724036e5b69f2f49e8d0181d88c70d4",
+      "links": {
+        "self": "https://zenodo.org/api/records/23424278/files/frequency_extraction_tool.html/content"
+      }
+    },
+    {
+      "id": "5701c808-ee28-4404-b485-038f69243721",
+      "key": "frequency_vs_time_40_cases.pdf",
+      "size": 1309932,
+      "checksum": "md5:1de906bc1cfaad36c47e16d83088f5c8",
+      "links": {
+        "self": "https://zenodo.org/api/records/23424278/files/frequency_vs_time_40_cases.pdf/content"
+      }
+    },
+    {
+      "id": "843a229c-a729-4741-b38d-d80d90e1786e",
+      "key": "results_for_all40_flights.pdf",
+      "size": 2296805,
+      "checksum": "md5:450816d44c6019e709e2380662c1919f",
+      "links": {
+        "self": "https://zenodo.org/api/records/23424278/files/results_for_all40_flights.pdf/content"
+      }
+    },
+    {
+      "id": "3d0b5085-d095-42ea-9f69-e9df377e626f",
+      "key": "Raw data_V_varying_H_varying.zip",
+      "size": 20903858,
+      "checksum": "md5:bf6f2e2f21ca54f3a07d5d72220efcff",
+      "links": {
+        "self": "https://zenodo.org/api/records/23424278/files/Raw%20data_V_varying_H_varying.zip/content"
+      }
+    }
+  ],
+  "swh": {},
+  "owners": [
+    {
+      "id": "1946357"
+    }
+  ],
+  "status": "published",
+  "stats": {
+    "downloads": 265,
+    "unique_downloads": 233,
+    "views": 212,
+    "unique_views": 195,
+    "version_downloads": 265,
+    "version_unique_downloads": 233,
+    "version_unique_views": 195,
+    "version_views": 212
+  },
+  "state": "done",
+  "submitted": true
+}

@@ -1,0 +1,290 @@
+{
+  "background": {
+    "source": "https://zenodo.org/records/10215080",
+    "license": "CC BY-NC 4.0",
+    "selection": "Earliest 100-second contiguous no-aircraft annotation run per recording; 90-second excerpt with 5-second margins, chosen before scanning.",
+    "cases": [
+      {
+        "id": "aerosonic-background-1",
+        "duration_s": 90.0,
+        "proposal_count": 0,
+        "discovery": {
+          "duration_s": 90.0,
+          "scanned_windows": 2,
+          "raw_proposals": 0,
+          "elapsed_s": 0.16758383300475543,
+          "config": {
+            "window_s": 90.0,
+            "stride_s": 60.0,
+            "min_duration_s": 20.0,
+            "min_prominence_db": 12.0,
+            "min_drop_fraction": 0.08,
+            "max_fit_rmse_hz": 2.5,
+            "bands": [
+              [
+                40.0,
+                100.0
+              ],
+              [
+                70.0,
+                170.0
+              ],
+              [
+                120.0,
+                280.0
+              ],
+              [
+                200.0,
+                450.0
+              ],
+              [
+                350.0,
+                800.0
+              ]
+            ]
+          },
+          "events": [],
+          "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+        },
+        "source_excerpt_sha256": "73dc2d179a4a5e6cafcb367135729ab02247fa3c09a85dd3abf687c381c6052e"
+      },
+      {
+        "id": "aerosonic-background-2",
+        "duration_s": 90.0,
+        "proposal_count": 0,
+        "discovery": {
+          "duration_s": 90.0,
+          "scanned_windows": 2,
+          "raw_proposals": 0,
+          "elapsed_s": 0.1667239169983077,
+          "config": {
+            "window_s": 90.0,
+            "stride_s": 60.0,
+            "min_duration_s": 20.0,
+            "min_prominence_db": 12.0,
+            "min_drop_fraction": 0.08,
+            "max_fit_rmse_hz": 2.5,
+            "bands": [
+              [
+                40.0,
+                100.0
+              ],
+              [
+                70.0,
+                170.0
+              ],
+              [
+                120.0,
+                280.0
+              ],
+              [
+                200.0,
+                450.0
+              ],
+              [
+                350.0,
+                800.0
+              ]
+            ]
+          },
+          "events": [],
+          "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+        },
+        "source_excerpt_sha256": "f26baf8a39acd483fc3e0147fff8d069712403bda8b500412120d85c72a723c6"
+      },
+      {
+        "id": "aerosonic-background-3",
+        "duration_s": 90.0,
+        "proposal_count": 0,
+        "discovery": {
+          "duration_s": 90.0,
+          "scanned_windows": 2,
+          "raw_proposals": 0,
+          "elapsed_s": 0.16389683300076285,
+          "config": {
+            "window_s": 90.0,
+            "stride_s": 60.0,
+            "min_duration_s": 20.0,
+            "min_prominence_db": 12.0,
+            "min_drop_fraction": 0.08,
+            "max_fit_rmse_hz": 2.5,
+            "bands": [
+              [
+                40.0,
+                100.0
+              ],
+              [
+                70.0,
+                170.0
+              ],
+              [
+                120.0,
+                280.0
+              ],
+              [
+                200.0,
+                450.0
+              ],
+              [
+                350.0,
+                800.0
+              ]
+            ]
+          },
+          "events": [],
+          "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+        },
+        "source_excerpt_sha256": "0bde6bffa71f795cdaeb9191b89e559c7fe9082a1622303b156b1ef3508b08f6"
+      },
+      {
+        "id": "aerosonic-background-4",
+        "duration_s": 90.0,
+        "proposal_count": 0,
+        "discovery": {
+          "duration_s": 90.0,
+          "scanned_windows": 2,
+          "raw_proposals": 0,
+          "elapsed_s": 0.16431400000146823,
+          "config": {
+            "window_s": 90.0,
+            "stride_s": 60.0,
+            "min_duration_s": 20.0,
+            "min_prominence_db": 12.0,
+            "min_drop_fraction": 0.08,
+            "max_fit_rmse_hz": 2.5,
+            "bands": [
+              [
+                40.0,
+                100.0
+              ],
+              [
+                70.0,
+                170.0
+              ],
+              [
+                120.0,
+                280.0
+              ],
+              [
+                200.0,
+                450.0
+              ],
+              [
+                350.0,
+                800.0
+              ]
+            ]
+          },
+          "events": [],
+          "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+        },
+        "source_excerpt_sha256": "db5ba9b2d68f56440428f6d1496c4afcfe594efae2109a74baa8db276d21cf47"
+      },
+      {
+        "id": "aerosonic-background-5",
+        "duration_s": 90.0,
+        "proposal_count": 0,
+        "discovery": {
+          "duration_s": 90.0,
+          "scanned_windows": 2,
+          "raw_proposals": 0,
+          "elapsed_s": 0.16207583300274564,
+          "config": {
+            "window_s": 90.0,
+            "stride_s": 60.0,
+            "min_duration_s": 20.0,
+            "min_prominence_db": 12.0,
+            "min_drop_fraction": 0.08,
+            "max_fit_rmse_hz": 2.5,
+            "bands": [
+              [
+                40.0,
+                100.0
+              ],
+              [
+                70.0,
+                170.0
+              ],
+              [
+                120.0,
+                280.0
+              ],
+              [
+                200.0,
+                450.0
+              ],
+              [
+                350.0,
+                800.0
+              ]
+            ]
+          },
+          "events": [],
+          "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+        },
+        "source_excerpt_sha256": "f881b91b918e2fb3c25e7796213eb6279f879889ee349fc704c9a3dbbbfc5c57"
+      },
+      {
+        "id": "aerosonic-background-6",
+        "duration_s": 90.0,
+        "proposal_count": 0,
+        "discovery": {
+          "duration_s": 90.0,
+          "scanned_windows": 2,
+          "raw_proposals": 0,
+          "elapsed_s": 0.1640102500023204,
+          "config": {
+            "window_s": 90.0,
+            "stride_s": 60.0,
+            "min_duration_s": 20.0,
+            "min_prominence_db": 12.0,
+            "min_drop_fraction": 0.08,
+            "max_fit_rmse_hz": 2.5,
+            "bands": [
+              [
+                40.0,
+                100.0
+              ],
+              [
+                70.0,
+                170.0
+              ],
+              [
+                120.0,
+                280.0
+              ],
+              [
+                200.0,
+                450.0
+              ],
+              [
+                350.0,
+                800.0
+              ]
+            ]
+          },
+          "events": [],
+          "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+        },
+        "source_excerpt_sha256": "cf2416ecfa447f569c6e23323f5df476c922dace25969df245c3f6c5f8da0351"
+      }
+    ],
+    "total_background_seconds": 540.0,
+    "clips_with_proposals": 0,
+    "total_acoustic_proposals": 0,
+    "interpretation": "Exploratory acoustic rejection check on six correlated environmental-source excerpts, not a calibrated false-location rate or a blind geolocation benchmark."
+  },
+  "wrong_day_catalog": {
+    "name": "Wrong-day flight catalog",
+    "source_case_report_sha256": "343189067140df95ccfd9bbe3cec838c5c6b43fdb94828eca97246c165645cf0",
+    "frozen_proposal_fingerprint": "049f9a010b0363eac411ccec1ed0654588e9b8a2adfa6826e1f3a13c2bb72876",
+    "catalog_timestamp_shift_s": 86400.0,
+    "status": "insufficient_evidence",
+    "retained_location_hypotheses": 0,
+    "evaluated_models": 0,
+    "expected_behavior": "Insufficient evidence because no provided flight spans the recording time.",
+    "passed_timing_gate_check": true,
+    "interpretation": "Tests missing-time-coverage rejection only; not resistance to similar but incorrect Doppler curves."
+  },
+  "interpretation": "Small development rejection suite. No calibrated false-positive rate or independent blind-geolocation accuracy claim."
+}

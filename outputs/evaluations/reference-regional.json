@@ -1,0 +1,33 @@
+{
+  "case": "outputs/cases/reference-regional",
+  "frozen_report_sha256": "343189067140df95ccfd9bbe3cec838c5c6b43fdb94828eca97246c165645cf0",
+  "reference_kind": "public_map_marker",
+  "reference_evidence": {
+    "latitude": 40.8766,
+    "longitude": -73.5247,
+    "kind": "public_map_marker",
+    "independent_holdout": false,
+    "coordinate_evidence": "https://app.osprey-watch.org/nest/3916",
+    "recording_clock_evidence": "Inherited fitted prior from published reproduction, not independent recorder timing"
+  },
+  "search_status": "ambiguous",
+  "eligible_for_independent_accuracy_summary": false,
+  "independence_basis": "Operator assertion and supplied evidence; not automatically verified.",
+  "top_ranked_distance_m": 186.03741282151273,
+  "all_retained_hypothesis_distances_m": [
+    186.03741282151273,
+    1069.261768548955,
+    962.1862785555389,
+    1179.166520993957,
+    991.541044669538,
+    3484.8512132002993,
+    2642.7481085692675,
+    1580.868272483229
+  ],
+  "diagnostic_top_ranked_within_m": {
+    "100": false,
+    "500": true,
+    "1000": true
+  },
+  "interpretation": "Distances to approximate public markers are diagnostics, not surveyed accuracy. An ambiguous or insufficient-evidence result is not a successful location assertion."
+}

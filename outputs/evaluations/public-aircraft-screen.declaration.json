@@ -1,0 +1,80 @@
+{
+  "manifest_sha256": "e867f289066dba9cce18e04ef8e7d3b65a8779aebfea646c1a0c50ccbd37ec86",
+  "discovery_config": {
+    "window_s": 90.0,
+    "stride_s": 60.0,
+    "min_duration_s": 20.0,
+    "min_prominence_db": 12.0,
+    "min_drop_fraction": 0.08,
+    "max_fit_rmse_hz": 2.5,
+    "bands": [
+      [
+        40.0,
+        100.0
+      ],
+      [
+        70.0,
+        170.0
+      ],
+      [
+        120.0,
+        280.0
+      ],
+      [
+        200.0,
+        450.0
+      ],
+      [
+        350.0,
+        800.0
+      ]
+    ]
+  },
+  "case_ids": [
+    "N373DF_R06",
+    "N394FX_R20",
+    "N4040_R12",
+    "N413AK_R49",
+    "N757AH_R41",
+    "N784MB_R04",
+    "N788BM_R03",
+    "N916KT_R22",
+    "N172EL_R35",
+    "N248LF_R14",
+    "N310MG_R23",
+    "N4004R_R19",
+    "N413AK_R05",
+    "N413AK_R16",
+    "N500MG_R17",
+    "N563FX_R21",
+    "N61NG_R37",
+    "N621KS_R18",
+    "N67WL_R59",
+    "N759NC_R46",
+    "N795MM_R13",
+    "N7PG_R60",
+    "N7RR_R30",
+    "N8085W_R27",
+    "N86LP_R01",
+    "N913TC_R15",
+    "N9393T_R02",
+    "N958JX_R50",
+    "N456CS_R38",
+    "N60RS_R11",
+    "N748SP_R36",
+    "N814SR_R07",
+    "N1387U_R44",
+    "N231DT_R57",
+    "N2933A_R08",
+    "N3012N_R40",
+    "N451EE_R45",
+    "N451EE_R51",
+    "N662EZ_R48",
+    "N9658K_R24"
+  ],
+  "analysis_code_sha256": {
+    "public_data.py": "0e2beba5137db4e226091fdfeba327e68df35a68bc0fc12e64e3a1e58fbd6c25",
+    "audio.py": "105b628c0d53dfa9fd60767e75ee84a5fc542584d0d4647d02199e0dbd77a079",
+    "discovery.py": "8c23272b97ac1651fba9e5a935b6d719a3efeba26b5093e58375fa5812649c1d"
+  }
+}

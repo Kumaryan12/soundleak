@@ -1,0 +1,3029 @@
+{
+  "schema_version": 1,
+  "source": "https://zenodo.org/records/23424278",
+  "creator": "Praveen Pathak",
+  "license": "CC BY 4.0",
+  "selection": "Every raw audio.wav from all four release archives, sorted by archive and member name; no selection by detector output.",
+  "manifest_sha256": "e867f289066dba9cce18e04ef8e7d3b65a8779aebfea646c1a0c50ccbd37ec86",
+  "discovery_config": {
+    "window_s": 90.0,
+    "stride_s": 60.0,
+    "min_duration_s": 20.0,
+    "min_prominence_db": 12.0,
+    "min_drop_fraction": 0.08,
+    "max_fit_rmse_hz": 2.5,
+    "bands": [
+      [
+        40.0,
+        100.0
+      ],
+      [
+        70.0,
+        170.0
+      ],
+      [
+        120.0,
+        280.0
+      ],
+      [
+        200.0,
+        450.0
+      ],
+      [
+        350.0,
+        800.0
+      ]
+    ]
+  },
+  "case_ids": [
+    "N373DF_R06",
+    "N394FX_R20",
+    "N4040_R12",
+    "N413AK_R49",
+    "N757AH_R41",
+    "N784MB_R04",
+    "N788BM_R03",
+    "N916KT_R22",
+    "N172EL_R35",
+    "N248LF_R14",
+    "N310MG_R23",
+    "N4004R_R19",
+    "N413AK_R05",
+    "N413AK_R16",
+    "N500MG_R17",
+    "N563FX_R21",
+    "N61NG_R37",
+    "N621KS_R18",
+    "N67WL_R59",
+    "N759NC_R46",
+    "N795MM_R13",
+    "N7PG_R60",
+    "N7RR_R30",
+    "N8085W_R27",
+    "N86LP_R01",
+    "N913TC_R15",
+    "N9393T_R02",
+    "N958JX_R50",
+    "N456CS_R38",
+    "N60RS_R11",
+    "N748SP_R36",
+    "N814SR_R07",
+    "N1387U_R44",
+    "N231DT_R57",
+    "N2933A_R08",
+    "N3012N_R40",
+    "N451EE_R45",
+    "N451EE_R51",
+    "N662EZ_R48",
+    "N9658K_R24"
+  ],
+  "analysis_code_sha256": {
+    "public_data.py": "0e2beba5137db4e226091fdfeba327e68df35a68bc0fc12e64e3a1e58fbd6c25",
+    "audio.py": "105b628c0d53dfa9fd60767e75ee84a5fc542584d0d4647d02199e0dbd77a079",
+    "discovery.py": "8c23272b97ac1651fba9e5a935b6d719a3efeba26b5093e58375fa5812649c1d"
+  },
+  "declared_cases": 40,
+  "screened_cases": 40,
+  "failed_cases": 0,
+  "cases_with_proposals": 38,
+  "cases_without_proposals": 2,
+  "total_acoustic_proposals": 54,
+  "total_audio_seconds": 3605.325927734375,
+  "independent_localization_eligible": false,
+  "localization_limits": [
+    "Independent receiver coordinates have not been established.",
+    "UTC-stamped extracted ridge data does not establish the UTC time of WAV sample zero.",
+    "No flight catalog or reference coordinates enter this acoustic screen."
+  ],
+  "cases": [
+    {
+      "id": "N373DF_R06",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N373DF_R06/audio.wav",
+      "uncompressed_bytes": 4794126,
+      "state": "screened",
+      "duration_s": 49.9384765625,
+      "source_duration_s": 49.93835416666667,
+      "audio_sha256": "27629dee59acf4877ac3094f9b6db46189b1f6572bf2ceecff06360caaee49bd",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 49.9384765625,
+        "scanned_windows": 1,
+        "raw_proposals": 2,
+        "elapsed_s": 0.07802337500470458,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-86241e42",
+            "start_s": 3.25,
+            "end_s": 27.5,
+            "duration_s": 24.25,
+            "frequency_start_hz": 149.34059260040522,
+            "frequency_end_hz": 99.7763288654387,
+            "prominence_db": 24.95925521850586,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.45207583626837183,
+            "trend_explained_fraction": 0.999273586291349,
+            "fitted_tone_hz": 114.75952572248795,
+            "approx_cpa_receive_s": 19.81347087892337,
+            "fit_converged": true
+          },
+          {
+            "id": "event-30382f35",
+            "start_s": 3.75,
+            "end_s": 36.0,
+            "duration_s": 32.25,
+            "frequency_start_hz": 271.625,
+            "frequency_end_hz": 188.125,
+            "prominence_db": 17.421119689941406,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.7679338386109522,
+            "trend_explained_fraction": 0.9964186755719138,
+            "fitted_tone_hz": 218.97259058581236,
+            "approx_cpa_receive_s": 22.05546475223517,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N394FX_R20",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N394FX_R20/audio.wav",
+      "uncompressed_bytes": 5810604,
+      "state": "screened",
+      "duration_s": 60.52685546875,
+      "source_duration_s": 60.526666666666664,
+      "audio_sha256": "cfd03401b5f891020d76c12000a7552be0c549f65b8e67dc571f06258f0178ac",
+      "full_member_crc_verified": true,
+      "proposal_count": 0,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 60.52685546875,
+        "scanned_windows": 1,
+        "raw_proposals": 0,
+        "elapsed_s": 0.09260570900369203,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N4040_R12",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N4040_R12/audio.wav",
+      "uncompressed_bytes": 8824368,
+      "state": "screened",
+      "duration_s": 91.920166015625,
+      "source_duration_s": 91.92004166666666,
+      "audio_sha256": "f0a78abf7fb124e0688ce82d0eb6410475b840188209b5e07dc21519c8bfa3df",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 91.920166015625,
+        "scanned_windows": 2,
+        "raw_proposals": 3,
+        "elapsed_s": 0.1814625420010998,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-f0de6613",
+            "start_s": 6.75,
+            "end_s": 53.0,
+            "duration_s": 46.25,
+            "frequency_start_hz": 447.125,
+            "frequency_end_hz": 378.125,
+            "prominence_db": 15.725650787353516,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.0758553925080172,
+            "trend_explained_fraction": 0.997841485877572,
+            "fitted_tone_hz": 405.3185640272572,
+            "approx_cpa_receive_s": 35.30413269840042,
+            "fit_converged": true
+          },
+          {
+            "id": "event-fc457592",
+            "start_s": 12.0,
+            "end_s": 38.75,
+            "duration_s": 26.75,
+            "frequency_start_hz": 266.625,
+            "frequency_end_hz": 238.375,
+            "prominence_db": 18.93954849243164,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 0.605059127525387,
+            "trend_explained_fraction": 0.9951888217276192,
+            "fitted_tone_hz": 247.1931882641585,
+            "approx_cpa_receive_s": 31.9399977213442,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N413AK_R49",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N413AK_R49/audio.wav",
+      "uncompressed_bytes": 8949198,
+      "state": "screened",
+      "duration_s": 93.220458984375,
+      "source_duration_s": 93.22035416666667,
+      "audio_sha256": "c28412b7c3de34b006b40bf6fe005ba042145ee4d480547a0647091e531a5b3b",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 93.220458984375,
+        "scanned_windows": 2,
+        "raw_proposals": 2,
+        "elapsed_s": 0.18058583299716702,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-031ac007",
+            "start_s": 35.5,
+            "end_s": 88.0,
+            "duration_s": 52.5,
+            "frequency_start_hz": 272.2152166329324,
+            "frequency_end_hz": 213.06478829681873,
+            "prominence_db": 17.194229125976562,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 1.007778702317341,
+            "trend_explained_fraction": 0.9970226157668521,
+            "fitted_tone_hz": 239.01634658205455,
+            "approx_cpa_receive_s": 58.84973727063529,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N757AH_R41",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N757AH_R41/audio.wav",
+      "uncompressed_bytes": 5418276,
+      "state": "screened",
+      "duration_s": 56.43994140625,
+      "source_duration_s": 56.43991666666667,
+      "audio_sha256": "e47eb35b076a9fbeb4983498221f6853d1d0cc9d8af7259a430557a100bed293",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 56.43994140625,
+        "scanned_windows": 1,
+        "raw_proposals": 5,
+        "elapsed_s": 0.0906165409978712,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-bb647602",
+            "start_s": 2.0,
+            "end_s": 27.0,
+            "duration_s": 25.0,
+            "frequency_start_hz": 487.03870256990194,
+            "frequency_end_hz": 422.125,
+            "prominence_db": 26.295974731445312,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.9664513973417197,
+            "trend_explained_fraction": 0.9978396927639155,
+            "fitted_tone_hz": 442.39222675290114,
+            "approx_cpa_receive_s": 22.35004017985925,
+            "fit_converged": true
+          },
+          {
+            "id": "event-aae1fc3b",
+            "start_s": 2.0,
+            "end_s": 54.25,
+            "duration_s": 52.25,
+            "frequency_start_hz": 97.34628685563803,
+            "frequency_end_hz": 78.57664036750793,
+            "prominence_db": 23.428417205810547,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.2581562547826723,
+            "trend_explained_fraction": 0.9987410020200044,
+            "fitted_tone_hz": 87.24491614273728,
+            "approx_cpa_receive_s": 23.543902832967966,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N784MB_R04",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N784MB_R04/audio.wav",
+      "uncompressed_bytes": 8182382,
+      "state": "screened",
+      "duration_s": 85.232666015625,
+      "source_duration_s": 85.2326875,
+      "audio_sha256": "c0366b111fbf82877bcaba53aa53a99602f9f5512513bc996e629aa04633d37e",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 85.232666015625,
+        "scanned_windows": 2,
+        "raw_proposals": 3,
+        "elapsed_s": 0.1600952500011772,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-70efaf4f",
+            "start_s": 2.0,
+            "end_s": 83.0,
+            "duration_s": 81.0,
+            "frequency_start_hz": 161.39882758259773,
+            "frequency_end_hz": 100.9699608553201,
+            "prominence_db": 24.589210510253906,
+            "grouped_proposals": 3,
+            "tone_fit_rmse_hz": 0.12199832915387236,
+            "trend_explained_fraction": 0.9999690220439262,
+            "fitted_tone_hz": 122.91580652446059,
+            "approx_cpa_receive_s": 43.58106725040615,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N788BM_R03",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N788BM_R03/audio.wav",
+      "uncompressed_bytes": 6530604,
+      "state": "screened",
+      "duration_s": 68.02685546875,
+      "source_duration_s": 68.02666666666667,
+      "audio_sha256": "8d23e3aa36ad439801fcbec6ef3f7f80647ed70d3b9ed11157539e72e771b38b",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 68.02685546875,
+        "scanned_windows": 1,
+        "raw_proposals": 3,
+        "elapsed_s": 0.1014261250020354,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-660d2bcb",
+            "start_s": 2.0,
+            "end_s": 66.0,
+            "duration_s": 64.0,
+            "frequency_start_hz": 213.625,
+            "frequency_end_hz": 135.94709401205182,
+            "prominence_db": 19.460487365722656,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 0.7548817954908472,
+            "trend_explained_fraction": 0.9993286659458219,
+            "fitted_tone_hz": 163.22775224324454,
+            "approx_cpa_receive_s": 39.75522804081034,
+            "fit_converged": true
+          },
+          {
+            "id": "event-33feae8e",
+            "start_s": 29.25,
+            "end_s": 62.0,
+            "duration_s": 32.75,
+            "frequency_start_hz": 356.4945872272365,
+            "frequency_end_hz": 257.46305191889405,
+            "prominence_db": 15.269245147705078,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.9195231309722671,
+            "trend_explained_fraction": 0.9991571689754125,
+            "fitted_tone_hz": 305.3150484871242,
+            "approx_cpa_receive_s": 40.144485186855086,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N916KT_R22",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N916KT_R22/audio.wav",
+      "uncompressed_bytes": 7433400,
+      "state": "screened",
+      "duration_s": 77.430908203125,
+      "source_duration_s": 77.43079166666666,
+      "audio_sha256": "81da035ff6af575fcaded1a4dfc3162bb6377a033c0d840af490eba47a879998",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 77.430908203125,
+        "scanned_windows": 1,
+        "raw_proposals": 5,
+        "elapsed_s": 0.12097733299742686,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-720b0a65",
+            "start_s": 2.0,
+            "end_s": 72.0,
+            "duration_s": 70.0,
+            "frequency_start_hz": 90.57541605085135,
+            "frequency_end_hz": 71.875,
+            "prominence_db": 26.405948638916016,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.1609109093642021,
+            "trend_explained_fraction": 0.9994202971414361,
+            "fitted_tone_hz": 79.28678736778679,
+            "approx_cpa_receive_s": 44.03841818838666,
+            "fit_converged": true
+          },
+          {
+            "id": "event-deacc44e",
+            "start_s": 18.0,
+            "end_s": 71.5,
+            "duration_s": 53.5,
+            "frequency_start_hz": 445.908219717443,
+            "frequency_end_hz": 359.125,
+            "prominence_db": 22.943359375,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.8659778099751165,
+            "trend_explained_fraction": 0.999077367917332,
+            "fitted_tone_hz": 396.45577165214866,
+            "approx_cpa_receive_s": 43.97155729304779,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N172EL_R35",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N172EL_R35/audio.wav",
+      "uncompressed_bytes": 12711942,
+      "state": "screened",
+      "duration_s": 132.415771484375,
+      "source_duration_s": 132.41560416666667,
+      "audio_sha256": "ec5ff2e4d78d68521c7f65fcf030c7b49131c18cb3c018900e61cf06382bcdf7",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 132.415771484375,
+        "scanned_windows": 2,
+        "raw_proposals": 10,
+        "elapsed_s": 0.24889620800240664,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-48c2c31b",
+            "start_s": 58.5,
+            "end_s": 83.0,
+            "duration_s": 24.5,
+            "frequency_start_hz": 397.97658272087574,
+            "frequency_end_hz": 340.875,
+            "prominence_db": 15.918815612792969,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 1.6287927743202633,
+            "trend_explained_fraction": 0.9917341036235836,
+            "fitted_tone_hz": 360.7658781175754,
+            "approx_cpa_receive_s": 76.42400173877482,
+            "fit_converged": true
+          },
+          {
+            "id": "event-4f126bb8",
+            "start_s": 62.0,
+            "end_s": 112.0,
+            "duration_s": 50.0,
+            "frequency_start_hz": 78.125,
+            "frequency_end_hz": 59.875,
+            "prominence_db": 23.964523315429688,
+            "grouped_proposals": 8,
+            "tone_fit_rmse_hz": 0.35458115810635793,
+            "trend_explained_fraction": 0.9971189302890198,
+            "fitted_tone_hz": 68.06782605855588,
+            "approx_cpa_receive_s": 82.65282337995976,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N248LF_R14",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N248LF_R14/audio.wav",
+      "uncompressed_bytes": 14584402,
+      "state": "screened",
+      "duration_s": 151.92041015625,
+      "source_duration_s": 151.92039583333334,
+      "audio_sha256": "e71592a17f8b1d82746f3915af9810066afefb54810443efe99fd0e081606319",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 151.92041015625,
+        "scanned_windows": 3,
+        "raw_proposals": 6,
+        "elapsed_s": 0.3217890830055694,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-92d04382",
+            "start_s": 25.0,
+            "end_s": 88.0,
+            "duration_s": 63.0,
+            "frequency_start_hz": 151.625,
+            "frequency_end_hz": 120.0,
+            "prominence_db": 24.238327026367188,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.46529244769905065,
+            "trend_explained_fraction": 0.9978047245479352,
+            "fitted_tone_hz": 121.52495777662358,
+            "approx_cpa_receive_s": 84.2185257316782,
+            "fit_converged": true
+          },
+          {
+            "id": "event-8f809b6f",
+            "start_s": 97.0,
+            "end_s": 148.0,
+            "duration_s": 51.0,
+            "frequency_start_hz": 187.1376612558961,
+            "frequency_end_hz": 152.4012846723199,
+            "prominence_db": 17.84809112548828,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 1.2398880606926022,
+            "trend_explained_fraction": 0.9846273200372188,
+            "fitted_tone_hz": 158.45884604166991,
+            "approx_cpa_receive_s": 137.54293888484875,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N310MG_R23",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N310MG_R23/audio.wav",
+      "uncompressed_bytes": 5846270,
+      "state": "screened",
+      "duration_s": 60.898193359375,
+      "source_duration_s": 60.8981875,
+      "audio_sha256": "b04a46541d3adf35419faf1e15ca5f02cfd93b4f99f2c3d5cd25dce5531066c8",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 60.898193359375,
+        "scanned_windows": 1,
+        "raw_proposals": 4,
+        "elapsed_s": 0.09297733299899846,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-cee21c3c",
+            "start_s": 18.75,
+            "end_s": 56.5,
+            "duration_s": 37.75,
+            "frequency_start_hz": 140.22208168543875,
+            "frequency_end_hz": 110.52714766934514,
+            "prominence_db": 24.33713722229004,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.5507166432683567,
+            "trend_explained_fraction": 0.9962759384454439,
+            "fitted_tone_hz": 127.1895354352178,
+            "approx_cpa_receive_s": 31.73521888614318,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N4004R_R19",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N4004R_R19/audio.wav",
+      "uncompressed_bytes": 9751680,
+      "state": "screened",
+      "duration_s": 101.57958984375,
+      "source_duration_s": 101.57954166666667,
+      "audio_sha256": "a5e4bad00fc1382824218e92f0da9ffb97223e5dfcccd35cf22bf0e354b72c8f",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 101.57958984375,
+        "scanned_windows": 2,
+        "raw_proposals": 5,
+        "elapsed_s": 0.1920784160029143,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-4c88c2d4",
+            "start_s": 24.5,
+            "end_s": 81.75,
+            "duration_s": 57.25,
+            "frequency_start_hz": 150.375,
+            "frequency_end_hz": 100.125,
+            "prominence_db": 21.564638137817383,
+            "grouped_proposals": 5,
+            "tone_fit_rmse_hz": 0.31819491819641105,
+            "trend_explained_fraction": 0.9996664411444126,
+            "fitted_tone_hz": 120.733871029583,
+            "approx_cpa_receive_s": 45.72538052223277,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N413AK_R05",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N413AK_R05/audio.wav",
+      "uncompressed_bytes": 13764090,
+      "state": "screened",
+      "duration_s": 143.37548828125,
+      "source_duration_s": 143.37547916666668,
+      "audio_sha256": "7202a8a4332765074c85af28ade258f41170f62e5356c4bf866f5775d25d1429",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 143.37548828125,
+        "scanned_windows": 3,
+        "raw_proposals": 4,
+        "elapsed_s": 0.27982154099299805,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-c2326dc6",
+            "start_s": 9.25,
+            "end_s": 88.0,
+            "duration_s": 78.75,
+            "frequency_start_hz": 157.625,
+            "frequency_end_hz": 110.375,
+            "prominence_db": 30.702518463134766,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.549633825705916,
+            "trend_explained_fraction": 0.9989508861659332,
+            "fitted_tone_hz": 128.5511886457695,
+            "approx_cpa_receive_s": 49.11474816960794,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N413AK_R16",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N413AK_R16/audio.wav",
+      "uncompressed_bytes": 14116400,
+      "state": "screened",
+      "duration_s": 147.04541015625,
+      "source_duration_s": 147.045375,
+      "audio_sha256": "fe241d8839128daf85de79606f0663333c6c32a40d50ab5043f32d36586440ac",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 147.04541015625,
+        "scanned_windows": 3,
+        "raw_proposals": 2,
+        "elapsed_s": 0.30021012499491917,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-a0cc1a3e",
+            "start_s": 37.25,
+            "end_s": 88.0,
+            "duration_s": 50.75,
+            "frequency_start_hz": 154.375,
+            "frequency_end_hz": 99.91828030347824,
+            "prominence_db": 23.33535385131836,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 0.9456776923213319,
+            "trend_explained_fraction": 0.9977291894799588,
+            "fitted_tone_hz": 121.6245178069946,
+            "approx_cpa_receive_s": 59.03285868720169,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N500MG_R17",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N500MG_R17/audio.wav",
+      "uncompressed_bytes": 7104048,
+      "state": "screened",
+      "duration_s": 74.0,
+      "source_duration_s": 74.00004166666666,
+      "audio_sha256": "02d2acc40e897b4b3a83c05f2ec89af4c10f0ccb17a1ea0a8fa7f1530e72eb39",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 74.0,
+        "scanned_windows": 1,
+        "raw_proposals": 3,
+        "elapsed_s": 0.11118445800093468,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-91adbd61",
+            "start_s": 2.0,
+            "end_s": 72.0,
+            "duration_s": 70.0,
+            "frequency_start_hz": 152.125,
+            "frequency_end_hz": 95.00150126882363,
+            "prominence_db": 28.536834716796875,
+            "grouped_proposals": 3,
+            "tone_fit_rmse_hz": 0.34942712031736345,
+            "trend_explained_fraction": 0.9996458725664477,
+            "fitted_tone_hz": 106.05820636415616,
+            "approx_cpa_receive_s": 55.52721431445187,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N563FX_R21",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N563FX_R21/audio.wav",
+      "uncompressed_bytes": 12444452,
+      "state": "screened",
+      "duration_s": 129.62939453125,
+      "source_duration_s": 129.62925,
+      "audio_sha256": "427a7575ec97a84feb8fe81f7fb8b1cff5a122e79223fba11d5327c0ba9e1179",
+      "full_member_crc_verified": true,
+      "proposal_count": 3,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 129.62939453125,
+        "scanned_windows": 2,
+        "raw_proposals": 3,
+        "elapsed_s": 0.24156899999798043,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-487213b9",
+            "start_s": 74.25,
+            "end_s": 116.25,
+            "duration_s": 42.0,
+            "frequency_start_hz": 609.625,
+            "frequency_end_hz": 506.375,
+            "prominence_db": 22.496871948242188,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.9442803234861559,
+            "trend_explained_fraction": 0.9946900498448499,
+            "fitted_tone_hz": 596.8267463384117,
+            "approx_cpa_receive_s": 76.5680130885105,
+            "fit_converged": true
+          },
+          {
+            "id": "event-2a86e01c",
+            "start_s": 98.25,
+            "end_s": 127.5,
+            "duration_s": 29.25,
+            "frequency_start_hz": 86.125,
+            "frequency_end_hz": 79.30904511362314,
+            "prominence_db": 20.081485748291016,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.3940773051983269,
+            "trend_explained_fraction": 0.9730908463640406,
+            "fitted_tone_hz": 80.77331641834733,
+            "approx_cpa_receive_s": 122.59055407814645,
+            "fit_converged": true
+          },
+          {
+            "id": "event-42341f82",
+            "start_s": 99.0,
+            "end_s": 127.5,
+            "duration_s": 28.5,
+            "frequency_start_hz": 93.125,
+            "frequency_end_hz": 79.30904511362314,
+            "prominence_db": 28.367435455322266,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.5397375547675285,
+            "trend_explained_fraction": 0.9905011453376485,
+            "fitted_tone_hz": 85.83718073614529,
+            "approx_cpa_receive_s": 116.0503344783151,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N61NG_R37",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N61NG_R37/audio.wav",
+      "uncompressed_bytes": 7480880,
+      "state": "screened",
+      "duration_s": 77.925537109375,
+      "source_duration_s": 77.925375,
+      "audio_sha256": "8edaf3c4a5a6f4370b979842bc38b3755a3930f8befa017795991d3d8224a657",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 77.925537109375,
+        "scanned_windows": 1,
+        "raw_proposals": 4,
+        "elapsed_s": 0.11682591599674197,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-42a6bbc1",
+            "start_s": 10.75,
+            "end_s": 64.25,
+            "duration_s": 53.5,
+            "frequency_start_hz": 197.86135775595903,
+            "frequency_end_hz": 120.0,
+            "prominence_db": 29.610992431640625,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.7230507856902557,
+            "trend_explained_fraction": 0.9990850596660209,
+            "fitted_tone_hz": 147.07694313056263,
+            "approx_cpa_receive_s": 36.27087965802159,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N621KS_R18",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N621KS_R18/audio.wav",
+      "uncompressed_bytes": 6202924,
+      "state": "screened",
+      "duration_s": 64.613525390625,
+      "source_duration_s": 64.61333333333333,
+      "audio_sha256": "2002081930df3f5b6e6ea9a6e6ce97fe65a712c9e02fe720f12f2f45e0602e81",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 64.613525390625,
+        "scanned_windows": 1,
+        "raw_proposals": 2,
+        "elapsed_s": 0.09475337499316083,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-e26f57ec",
+            "start_s": 2.0,
+            "end_s": 57.75,
+            "duration_s": 55.75,
+            "frequency_start_hz": 202.55075787752867,
+            "frequency_end_hz": 142.32819216698408,
+            "prominence_db": 24.529010772705078,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 0.8453610396891055,
+            "trend_explained_fraction": 0.9981446996765528,
+            "fitted_tone_hz": 161.2742289739656,
+            "approx_cpa_receive_s": 38.82257527875417,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N67WL_R59",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N67WL_R59/audio.wav",
+      "uncompressed_bytes": 17419838,
+      "state": "screened",
+      "duration_s": 181.456298828125,
+      "source_duration_s": 181.4561875,
+      "audio_sha256": "46b7905f230dc5cc8dc0e9485a88ab2b3b544737d62c20b96b34ea2d460b84c9",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 181.456298828125,
+        "scanned_windows": 3,
+        "raw_proposals": 7,
+        "elapsed_s": 0.3511320000034175,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-baeede59",
+            "start_s": 62.0,
+            "end_s": 111.5,
+            "duration_s": 49.5,
+            "frequency_start_hz": 145.125,
+            "frequency_end_hz": 113.125,
+            "prominence_db": 20.9140625,
+            "grouped_proposals": 6,
+            "tone_fit_rmse_hz": 0.20393748012933835,
+            "trend_explained_fraction": 0.999512924489558,
+            "fitted_tone_hz": 136.24648001768662,
+            "approx_cpa_receive_s": 69.61832218739224,
+            "fit_converged": true
+          },
+          {
+            "id": "event-501f19e8",
+            "start_s": 143.0,
+            "end_s": 164.5,
+            "duration_s": 21.5,
+            "frequency_start_hz": 484.375,
+            "frequency_end_hz": 442.125,
+            "prominence_db": 18.922142028808594,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.9214358224148407,
+            "trend_explained_fraction": 0.995986379160565,
+            "fitted_tone_hz": 465.44339386100836,
+            "approx_cpa_receive_s": 150.29143109661183,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N759NC_R46",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N759NC_R46/audio.wav",
+      "uncompressed_bytes": 9145358,
+      "state": "screened",
+      "duration_s": 95.263671875,
+      "source_duration_s": 95.2636875,
+      "audio_sha256": "520153c1e15d1ebf75cb713ca3fb158ecd73594a5dd8a6490b1baee4e2a98036",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 95.263671875,
+        "scanned_windows": 2,
+        "raw_proposals": 5,
+        "elapsed_s": 0.20336075000523124,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-5b0029ff",
+            "start_s": 16.5,
+            "end_s": 85.5,
+            "duration_s": 69.0,
+            "frequency_start_hz": 95.1720979064703,
+            "frequency_end_hz": 69.53456177562475,
+            "prominence_db": 21.755050659179688,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.4130446145038689,
+            "trend_explained_fraction": 0.9981498124801355,
+            "fitted_tone_hz": 80.15409396073902,
+            "approx_cpa_receive_s": 52.68374936972147,
+            "fit_converged": true
+          },
+          {
+            "id": "event-d9125e5c",
+            "start_s": 50.75,
+            "end_s": 78.0,
+            "duration_s": 27.25,
+            "frequency_start_hz": 405.125,
+            "frequency_end_hz": 351.26365533377975,
+            "prominence_db": 15.308719635009766,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.6788020908107347,
+            "trend_explained_fraction": 0.998314764446347,
+            "fitted_tone_hz": 385.9307190177739,
+            "approx_cpa_receive_s": 57.95469070908886,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N795MM_R13",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N795MM_R13/audio.wav",
+      "uncompressed_bytes": 7480876,
+      "state": "screened",
+      "duration_s": 77.92529296875,
+      "source_duration_s": 77.92533333333333,
+      "audio_sha256": "9a800515b85817e09b418ff125a3d71723fd9922b978a317017bf5098ed77c0b",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 77.92529296875,
+        "scanned_windows": 1,
+        "raw_proposals": 3,
+        "elapsed_s": 0.11879012500139652,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-e8153400",
+            "start_s": 2.0,
+            "end_s": 75.75,
+            "duration_s": 73.75,
+            "frequency_start_hz": 149.9630838856101,
+            "frequency_end_hz": 95.45264183729887,
+            "prominence_db": 27.643814086914062,
+            "grouped_proposals": 3,
+            "tone_fit_rmse_hz": 0.5121984991384221,
+            "trend_explained_fraction": 0.9991177542147418,
+            "fitted_tone_hz": 111.73321842910578,
+            "approx_cpa_receive_s": 47.707318704448404,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N7PG_R60",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N7PG_R60/audio.wav",
+      "uncompressed_bytes": 10803824,
+      "state": "screened",
+      "duration_s": 112.53955078125,
+      "source_duration_s": 112.539375,
+      "audio_sha256": "9164e2702d0e24b9620f4511a1ee21758a7d501cb00867dd04089ca0b846e30f",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 112.53955078125,
+        "scanned_windows": 2,
+        "raw_proposals": 2,
+        "elapsed_s": 0.21813420899707125,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-76d873df",
+            "start_s": 31.75,
+            "end_s": 88.0,
+            "duration_s": 56.25,
+            "frequency_start_hz": 791.0448055639863,
+            "frequency_end_hz": 568.625,
+            "prominence_db": 19.318252563476562,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 2.0414105990898475,
+            "trend_explained_fraction": 0.9991609954259247,
+            "fitted_tone_hz": 661.2270201482731,
+            "approx_cpa_receive_s": 58.378184624271135,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N7RR_R30",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N7RR_R30/audio.wav",
+      "uncompressed_bytes": 10464998,
+      "state": "screened",
+      "duration_s": 109.010009765625,
+      "source_duration_s": 109.0099375,
+      "audio_sha256": "7b34ab4933a7c4193f9e668d42fa4d7cb94a0b754b25eb84ebddbca227419b7a",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 109.010009765625,
+        "scanned_windows": 2,
+        "raw_proposals": 7,
+        "elapsed_s": 0.21425858299335232,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-0fad61c6",
+            "start_s": 20.75,
+            "end_s": 88.0,
+            "duration_s": 67.25,
+            "frequency_start_hz": 145.3176309093833,
+            "frequency_end_hz": 114.76276476308703,
+            "prominence_db": 22.130691528320312,
+            "grouped_proposals": 7,
+            "tone_fit_rmse_hz": 0.2279102311967181,
+            "trend_explained_fraction": 0.9994035960555336,
+            "fitted_tone_hz": 116.65686023559907,
+            "approx_cpa_receive_s": 82.5358412676824,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N8085W_R27",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N8085W_R27/audio.wav",
+      "uncompressed_bytes": 7112404,
+      "state": "screened",
+      "duration_s": 74.087158203125,
+      "source_duration_s": 74.08708333333334,
+      "audio_sha256": "a06237f42d5789ff0b868e636b45f86974f61c4318f6ddb01865129245111ee5",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 74.087158203125,
+        "scanned_windows": 1,
+        "raw_proposals": 3,
+        "elapsed_s": 0.11480895899876487,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-37f0e5b4",
+            "start_s": 20.75,
+            "end_s": 54.25,
+            "duration_s": 33.5,
+            "frequency_start_hz": 187.24939355591778,
+            "frequency_end_hz": 149.28219742700458,
+            "prominence_db": 19.547508239746094,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 0.43460942731597907,
+            "trend_explained_fraction": 0.9986527892949182,
+            "fitted_tone_hz": 156.18651838666062,
+            "approx_cpa_receive_s": 48.97324067887581,
+            "fit_converged": true
+          },
+          {
+            "id": "event-e8a22171",
+            "start_s": 33.25,
+            "end_s": 72.0,
+            "duration_s": 38.75,
+            "frequency_start_hz": 445.22252200357616,
+            "frequency_end_hz": 360.0084943026304,
+            "prominence_db": 17.533817291259766,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.8827858813987406,
+            "trend_explained_fraction": 0.9952416877264011,
+            "fitted_tone_hz": 403.88806429888723,
+            "approx_cpa_receive_s": 45.22017629010848,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N86LP_R01",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N86LP_R01/audio.wav",
+      "uncompressed_bytes": 10987054,
+      "state": "screened",
+      "duration_s": 114.447998046875,
+      "source_duration_s": 114.44802083333333,
+      "audio_sha256": "a19c78d9d147a6e8b4b2c495bd344787363875ea411e3af21b59490517832495",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 114.447998046875,
+        "scanned_windows": 2,
+        "raw_proposals": 6,
+        "elapsed_s": 0.21741225000005215,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-325d5b4c",
+            "start_s": 21.75,
+            "end_s": 87.0,
+            "duration_s": 65.25,
+            "frequency_start_hz": 155.375,
+            "frequency_end_hz": 100.125,
+            "prominence_db": 21.959766387939453,
+            "grouped_proposals": 6,
+            "tone_fit_rmse_hz": 0.5586368089169124,
+            "trend_explained_fraction": 0.999230966066387,
+            "fitted_tone_hz": 120.72639331436558,
+            "approx_cpa_receive_s": 53.64722159804511,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N913TC_R15",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N913TC_R15/audio.wav",
+      "uncompressed_bytes": 9448522,
+      "state": "screened",
+      "duration_s": 98.421630859375,
+      "source_duration_s": 98.42164583333333,
+      "audio_sha256": "676e3cb4e34941760a1f3df031d551e0aa7e1d69d4e9085a05a91e2029a87c19",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 98.421630859375,
+        "scanned_windows": 2,
+        "raw_proposals": 4,
+        "elapsed_s": 0.19216791699727764,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-7982321d",
+            "start_s": 11.25,
+            "end_s": 35.0,
+            "duration_s": 23.75,
+            "frequency_start_hz": 236.38516876101494,
+            "frequency_end_hz": 215.125,
+            "prominence_db": 13.761734008789062,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.7528927973056164,
+            "trend_explained_fraction": 0.9870252946545954,
+            "fitted_tone_hz": 226.78507346221699,
+            "approx_cpa_receive_s": 19.887950023005914,
+            "fit_converged": true
+          },
+          {
+            "id": "event-d7d1eb8b",
+            "start_s": 40.5,
+            "end_s": 88.0,
+            "duration_s": 47.5,
+            "frequency_start_hz": 208.875,
+            "frequency_end_hz": 151.125,
+            "prominence_db": 16.62285614013672,
+            "grouped_proposals": 3,
+            "tone_fit_rmse_hz": 0.9815317448523538,
+            "trend_explained_fraction": 0.9976836753310357,
+            "fitted_tone_hz": 171.77690789497805,
+            "approx_cpa_receive_s": 66.12918955270581,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N9393T_R02",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N9393T_R02/audio.wav",
+      "uncompressed_bytes": 13198892,
+      "state": "screened",
+      "duration_s": 137.488037109375,
+      "source_duration_s": 137.488,
+      "audio_sha256": "7834bad6d620df2143b396325fd861d6581d5ad25dd9bcfa997eb953d13a65f5",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 137.488037109375,
+        "scanned_windows": 2,
+        "raw_proposals": 5,
+        "elapsed_s": 0.25520720799977425,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-7de2af62",
+            "start_s": 61.75,
+            "end_s": 88.0,
+            "duration_s": 26.25,
+            "frequency_start_hz": 143.125,
+            "frequency_end_hz": 120.875,
+            "prominence_db": 20.91827392578125,
+            "grouped_proposals": 5,
+            "tone_fit_rmse_hz": 0.4401220880931745,
+            "trend_explained_fraction": 0.9955305109682357,
+            "fitted_tone_hz": 127.04250708170876,
+            "approx_cpa_receive_s": 80.42826081768273,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N958JX_R50",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N958JX_R50/audio.wav",
+      "uncompressed_bytes": 4544468,
+      "state": "screened",
+      "duration_s": 47.337890625,
+      "source_duration_s": 47.33775,
+      "audio_sha256": "3cfa0ca3a58db714074487004ca3b7505ab9ee4e4882b7efbfdf62f8d7f1a426",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 47.337890625,
+        "scanned_windows": 1,
+        "raw_proposals": 1,
+        "elapsed_s": 0.07375158299691975,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-a4b61150",
+            "start_s": 2.0,
+            "end_s": 24.5,
+            "duration_s": 22.5,
+            "frequency_start_hz": 76.70558716729283,
+            "frequency_end_hz": 70.375,
+            "prominence_db": 18.722152709960938,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 0.3530347633760067,
+            "trend_explained_fraction": 0.973317703706064,
+            "fitted_tone_hz": 72.41099786527667,
+            "approx_cpa_receive_s": 18.009537365921826,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N456CS_R38",
+      "category": "V_varying_H_constant",
+      "archive": "Raw data_V_varying_H_constant.zip",
+      "member": "V_varying_H_constant/N456CS_R38/audio.wav",
+      "uncompressed_bytes": 11445804,
+      "state": "screened",
+      "duration_s": 119.226806640625,
+      "source_duration_s": 119.22666666666667,
+      "audio_sha256": "032ff198c6c85997758a2893641d7a87cb21d9f4bb847dd261cca8fd67df2ae8",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 119.226806640625,
+        "scanned_windows": 2,
+        "raw_proposals": 4,
+        "elapsed_s": 0.22739187499973923,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-8d0fcccc",
+            "start_s": 25.0,
+            "end_s": 82.75,
+            "duration_s": 57.75,
+            "frequency_start_hz": 152.125,
+            "frequency_end_hz": 108.99868387461174,
+            "prominence_db": 26.087230682373047,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 1.0326447896249966,
+            "trend_explained_fraction": 0.9938849336067856,
+            "fitted_tone_hz": 129.94412768745647,
+            "approx_cpa_receive_s": 46.91372465133996,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N60RS_R11",
+      "category": "V_varying_H_constant",
+      "archive": "Raw data_V_varying_H_constant.zip",
+      "member": "V_varying_H_constant/N60RS_R11/audio.wav",
+      "uncompressed_bytes": 8840748,
+      "state": "screened",
+      "duration_s": 92.0908203125,
+      "source_duration_s": 92.09066666666666,
+      "audio_sha256": "d2e839c8a95f53824cabb294748aaf63f5714a2add6a414c4f8cdd4c4db9e293",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 92.0908203125,
+        "scanned_windows": 2,
+        "raw_proposals": 4,
+        "elapsed_s": 0.19710079200012842,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-d5fd8d64",
+            "start_s": 2.25,
+            "end_s": 88.0,
+            "duration_s": 85.75,
+            "frequency_start_hz": 154.625,
+            "frequency_end_hz": 108.625,
+            "prominence_db": 26.90777587890625,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.5369044463029184,
+            "trend_explained_fraction": 0.9988951121228598,
+            "fitted_tone_hz": 126.74066901735816,
+            "approx_cpa_receive_s": 50.34025312809253,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N748SP_R36",
+      "category": "V_varying_H_constant",
+      "archive": "Raw data_V_varying_H_constant.zip",
+      "member": "V_varying_H_constant/N748SP_R36/audio.wav",
+      "uncompressed_bytes": 6563374,
+      "state": "screened",
+      "duration_s": 68.3681640625,
+      "source_duration_s": 68.36802083333333,
+      "audio_sha256": "0fdf8b328b9e02ff83144b634f5a6ced115cac4672b89557e1aae3151ab7612d",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 68.3681640625,
+        "scanned_windows": 1,
+        "raw_proposals": 4,
+        "elapsed_s": 0.11289674999716226,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-feea70e9",
+            "start_s": 6.5,
+            "end_s": 66.25,
+            "duration_s": 59.75,
+            "frequency_start_hz": 86.125,
+            "frequency_end_hz": 65.07194504141808,
+            "prominence_db": 27.657569885253906,
+            "grouped_proposals": 3,
+            "tone_fit_rmse_hz": 0.485384148945651,
+            "trend_explained_fraction": 0.9948662244526539,
+            "fitted_tone_hz": 73.6260180004472,
+            "approx_cpa_receive_s": 31.225587920437736,
+            "fit_converged": true
+          },
+          {
+            "id": "event-5fd8cd80",
+            "start_s": 32.75,
+            "end_s": 57.25,
+            "duration_s": 24.5,
+            "frequency_start_hz": 545.875,
+            "frequency_end_hz": 487.46597293391824,
+            "prominence_db": 17.804840087890625,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.26390212558026,
+            "trend_explained_fraction": 0.9944532724603171,
+            "fitted_tone_hz": 528.4681863905946,
+            "approx_cpa_receive_s": 37.386598699259324,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N814SR_R07",
+      "category": "V_varying_H_constant",
+      "archive": "Raw data_V_varying_H_constant.zip",
+      "member": "V_varying_H_constant/N814SR_R07/audio.wav",
+      "uncompressed_bytes": 6167260,
+      "state": "screened",
+      "duration_s": 64.241943359375,
+      "source_duration_s": 64.24183333333333,
+      "audio_sha256": "c732dff1b19142894931fcd87febdb70a18daa472c316e5c6f36ac6dfe3debc1",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 64.241943359375,
+        "scanned_windows": 1,
+        "raw_proposals": 3,
+        "elapsed_s": 0.09634908300358802,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-214de949",
+            "start_s": 3.25,
+            "end_s": 62.0,
+            "duration_s": 58.75,
+            "frequency_start_hz": 169.125,
+            "frequency_end_hz": 99.045185521245,
+            "prominence_db": 22.665958404541016,
+            "grouped_proposals": 3,
+            "tone_fit_rmse_hz": 1.1834867440187071,
+            "trend_explained_fraction": 0.9982299168888145,
+            "fitted_tone_hz": 123.25452574233118,
+            "approx_cpa_receive_s": 37.31855011945113,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N1387U_R44",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N1387U_R44/audio.wav",
+      "uncompressed_bytes": 4010382,
+      "state": "screened",
+      "duration_s": 41.7744140625,
+      "source_duration_s": 41.77435416666667,
+      "audio_sha256": "e9e57696eb1d1a80eaf4688f4bce068398afcf6f9bb8732d72dba8833837255e",
+      "full_member_crc_verified": true,
+      "proposal_count": 0,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 41.7744140625,
+        "scanned_windows": 1,
+        "raw_proposals": 0,
+        "elapsed_s": 0.05876624999655178,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N231DT_R57",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N231DT_R57/audio.wav",
+      "uncompressed_bytes": 7683062,
+      "state": "screened",
+      "duration_s": 80.031494140625,
+      "source_duration_s": 80.0314375,
+      "audio_sha256": "56aef7ec190822a03f78764d5d91d22c1f8181e4b672a453c04c899d2cb0a0c9",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 80.031494140625,
+        "scanned_windows": 1,
+        "raw_proposals": 4,
+        "elapsed_s": 0.12554858299699845,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-0992842f",
+            "start_s": 15.0,
+            "end_s": 72.5,
+            "duration_s": 57.5,
+            "frequency_start_hz": 134.32274325937033,
+            "frequency_end_hz": 113.29846958070993,
+            "prominence_db": 21.873512268066406,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.4924368139504232,
+            "trend_explained_fraction": 0.9955400567320573,
+            "fitted_tone_hz": 122.58621610000853,
+            "approx_cpa_receive_s": 46.140771673166746,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N2933A_R08",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N2933A_R08/audio.wav",
+      "uncompressed_bytes": 4695598,
+      "state": "screened",
+      "duration_s": 48.912109375,
+      "source_duration_s": 48.91202083333334,
+      "audio_sha256": "bea85232822bb0702e9af8c825934aa27cf04bbb0665db8e15ceae87f552e690",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 48.912109375,
+        "scanned_windows": 1,
+        "raw_proposals": 1,
+        "elapsed_s": 0.08947183300188044,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-af2c1024",
+            "start_s": 2.0,
+            "end_s": 43.25,
+            "duration_s": 41.25,
+            "frequency_start_hz": 481.43063355982304,
+            "frequency_end_hz": 388.0664495974779,
+            "prominence_db": 18.191043853759766,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.1540967098228665,
+            "trend_explained_fraction": 0.9990042026253698,
+            "fitted_tone_hz": 427.12749149933046,
+            "approx_cpa_receive_s": 26.977851656275778,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N3012N_R40",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N3012N_R40/audio.wav",
+      "uncompressed_bytes": 7665228,
+      "state": "screened",
+      "duration_s": 79.845703125,
+      "source_duration_s": 79.84566666666667,
+      "audio_sha256": "70dc6c4edc47d56c85c8d24ae6ac34a640bfaa5bbf23a908f2dd2244d7534e06",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 79.845703125,
+        "scanned_windows": 1,
+        "raw_proposals": 4,
+        "elapsed_s": 0.12455641599808587,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-64980aa6",
+            "start_s": 12.5,
+            "end_s": 57.0,
+            "duration_s": 44.5,
+            "frequency_start_hz": 135.43390717357397,
+            "frequency_end_hz": 103.54963973164558,
+            "prominence_db": 21.805587768554688,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.37824898339720214,
+            "trend_explained_fraction": 0.9988078602141451,
+            "fitted_tone_hz": 114.06284674884336,
+            "approx_cpa_receive_s": 42.43554458827581,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N451EE_R45",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N451EE_R45/audio.wav",
+      "uncompressed_bytes": 3902222,
+      "state": "screened",
+      "duration_s": 40.647705078125,
+      "source_duration_s": 40.6476875,
+      "audio_sha256": "e9ba69a70a8a2c2eb79c06094e9c250c7490af738871ed03b52ba1bd809e94a2",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 40.647705078125,
+        "scanned_windows": 1,
+        "raw_proposals": 2,
+        "elapsed_s": 0.06072116600262234,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-83964ce1",
+            "start_s": 2.0,
+            "end_s": 26.5,
+            "duration_s": 24.5,
+            "frequency_start_hz": 160.95223934948444,
+            "frequency_end_hz": 121.375,
+            "prominence_db": 27.49673080444336,
+            "grouped_proposals": 2,
+            "tone_fit_rmse_hz": 0.6510378633269899,
+            "trend_explained_fraction": 0.9977547740111812,
+            "fitted_tone_hz": 136.48230195009808,
+            "approx_cpa_receive_s": 18.37358602814234,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N451EE_R51",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N451EE_R51/audio.wav",
+      "uncompressed_bytes": 4437466,
+      "state": "screened",
+      "duration_s": 46.22314453125,
+      "source_duration_s": 46.223145833333334,
+      "audio_sha256": "10b83e163e84784d5d9952857160fb17d30dc6a1687c6fa159c0d54c3078323d",
+      "full_member_crc_verified": true,
+      "proposal_count": 1,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 46.22314453125,
+        "scanned_windows": 1,
+        "raw_proposals": 1,
+        "elapsed_s": 0.07155649999913294,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-90c3c808",
+            "start_s": 21.5,
+            "end_s": 44.0,
+            "duration_s": 22.5,
+            "frequency_start_hz": 447.72576979361475,
+            "frequency_end_hz": 365.375,
+            "prominence_db": 14.96295166015625,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.873852532169543,
+            "trend_explained_fraction": 0.9936882657547843,
+            "fitted_tone_hz": 445.9443048941076,
+            "approx_cpa_receive_s": 22.166947956854806,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N662EZ_R48",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N662EZ_R48/audio.wav",
+      "uncompressed_bytes": 10126172,
+      "state": "screened",
+      "duration_s": 105.48046875,
+      "source_duration_s": 105.4805,
+      "audio_sha256": "2f374f6244cfe5dad8a200b427e392a4c64540d4cb0bc4a621e34aac229c3ea4",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 105.48046875,
+        "scanned_windows": 2,
+        "raw_proposals": 4,
+        "elapsed_s": 0.19286779099638807,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-ba92f70f",
+            "start_s": 40.25,
+            "end_s": 69.5,
+            "duration_s": 29.25,
+            "frequency_start_hz": 475.5678453594446,
+            "frequency_end_hz": 368.125,
+            "prominence_db": 14.692634582519531,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.378238628301902,
+            "trend_explained_fraction": 0.9982817380532799,
+            "fitted_tone_hz": 382.18986037895087,
+            "approx_cpa_receive_s": 64.28691615120847,
+            "fit_converged": true
+          },
+          {
+            "id": "event-26c90c4b",
+            "start_s": 52.5,
+            "end_s": 80.75,
+            "duration_s": 28.25,
+            "frequency_start_hz": 172.625,
+            "frequency_end_hz": 140.318304695189,
+            "prominence_db": 19.657569885253906,
+            "grouped_proposals": 3,
+            "tone_fit_rmse_hz": 0.45607364853572235,
+            "trend_explained_fraction": 0.9978733549488239,
+            "fitted_tone_hz": 160.1857840804091,
+            "approx_cpa_receive_s": 59.40220427821678,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    },
+    {
+      "id": "N9658K_R24",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N9658K_R24/audio.wav",
+      "uncompressed_bytes": 10019176,
+      "state": "screened",
+      "duration_s": 104.365966796875,
+      "source_duration_s": 104.36595833333334,
+      "audio_sha256": "87ccca3294b374e3a8c4ae7362c5d67c3cfa12bdf4ddaa576a06d07ff60be8c2",
+      "full_member_crc_verified": true,
+      "proposal_count": 2,
+      "below_minimum_event_duration": false,
+      "discovery": {
+        "duration_s": 104.365966796875,
+        "scanned_windows": 2,
+        "raw_proposals": 5,
+        "elapsed_s": 0.1972575420004432,
+        "config": {
+          "window_s": 90.0,
+          "stride_s": 60.0,
+          "min_duration_s": 20.0,
+          "min_prominence_db": 12.0,
+          "min_drop_fraction": 0.08,
+          "max_fit_rmse_hz": 2.5,
+          "bands": [
+            [
+              40.0,
+              100.0
+            ],
+            [
+              70.0,
+              170.0
+            ],
+            [
+              120.0,
+              280.0
+            ],
+            [
+              200.0,
+              450.0
+            ],
+            [
+              350.0,
+              800.0
+            ]
+          ]
+        },
+        "events": [
+          {
+            "id": "event-3cf95ac9",
+            "start_s": 2.0,
+            "end_s": 88.0,
+            "duration_s": 86.0,
+            "frequency_start_hz": 98.6669150441885,
+            "frequency_end_hz": 75.625,
+            "prominence_db": 25.99707794189453,
+            "grouped_proposals": 4,
+            "tone_fit_rmse_hz": 0.30724889037699904,
+            "trend_explained_fraction": 0.9989103383338084,
+            "fitted_tone_hz": 85.28306790711083,
+            "approx_cpa_receive_s": 52.54267535559413,
+            "fit_converged": true
+          },
+          {
+            "id": "event-ea728878",
+            "start_s": 42.25,
+            "end_s": 88.0,
+            "duration_s": 45.75,
+            "frequency_start_hz": 650.625,
+            "frequency_end_hz": 529.875,
+            "prominence_db": 27.594799041748047,
+            "grouped_proposals": 1,
+            "tone_fit_rmse_hz": 1.2585780751169438,
+            "trend_explained_fraction": 0.998907510485341,
+            "fitted_tone_hz": 589.2012580323293,
+            "approx_cpa_receive_s": 54.49123182069353,
+            "fit_converged": true
+          }
+        ],
+        "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+      }
+    }
+  ],
+  "interpretation": "Acoustic component check on published aircraft passages using frozen discovery defaults. Proposed patterns are unconfirmed; clip-level proposal presence is not aircraft-identification accuracy, localization accuracy or calibrated recall. No successful location claim is made; all misses and failures are retained."
+}

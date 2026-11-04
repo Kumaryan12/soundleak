@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-04",
+  "state": "needs_qualified_localization_data",
+  "qualified_independent_localization_datasets": 0,
+  "acoustic_component_dataset": "pathak-40",
+  "datasets": [
+    {
+      "id": "pathak-40",
+      "name": "Pathak 40 aircraft passages",
+      "source": "https://zenodo.org/records/23424278",
+      "disposition": "acoustic_component_screen",
+      "raw_aircraft_audio": "available",
+      "receiver_position": "not_established",
+      "sample_zero_utc": "not_established",
+      "notes": "WAV, extracted frequency CSV and aircraft KML supplied. Example WAV has no embedded recording time. UTC on author-extracted ridge points is not evidence of WAV sample-zero UTC. No independent receiver-position reference established in reviewed release materials."
+    },
+    {
+      "id": "aerosonic-1",
+      "name": "AeroSonicDB YPAD-0523 v1.1.2",
+      "source": "https://zenodo.org/records/10215080",
+      "disposition": "background_controls_only",
+      "raw_aircraft_audio": "available",
+      "receiver_position": "intentionally_obfuscated",
+      "sample_zero_utc": "not_verified",
+      "notes": "Publisher substitutes nearby roads/public spaces for exact recorder coordinates. Existing six environmental background excerpts remain useful component controls."
+    },
+    {
+      "id": "aerosonic-3k",
+      "name": "AeroSonicDB 3K",
+      "source": "https://zenodo.org/records/12775560",
+      "disposition": "restricted",
+      "raw_aircraft_audio": "access_request_required",
+      "receiver_position": "not_audited",
+      "sample_zero_utc": "not_audited",
+      "notes": "Release files restricted; no access request or email sent."
+    },
+    {
+      "id": "sonyc-v2",
+      "name": "SONYC-UST-V2",
+      "source": "https://arxiv.org/html/2009.05188",
+      "disposition": "unsuitable_for_current_pilot",
+      "raw_aircraft_audio": "urban_sound_snippets",
+      "receiver_position": "city_block_center",
+      "sample_zero_utc": "quantized_to_hour",
+      "notes": "Paper specifies ten-second snippets, block-level location and hour-level time. Insufficient for the unchanged minimum-20-second Doppler event screen and precise flight alignment."
+    },
+    {
+      "id": "tartan",
+      "name": "TartanAviation",
+      "source": "https://www.nature.com/articles/s41597-025-04775-6",
+      "disposition": "wrong_audio_modality",
+      "raw_aircraft_audio": "ATC_radio_speech",
+      "receiver_position": "not_audited",
+      "sample_zero_utc": "not_audited",
+      "notes": "Audio modality is radio communications; alignment to ADS-B does not make it an acoustic engine-overflight recording."
+    },
+    {
+      "id": "delft-skymaster",
+      "name": "TU Delft Cessna Skymaster measurements",
+      "source": "https://research.tudelft.nl/en/datasets/data-and-code-underlying-ch-7-of-phd-thesis-phased-microphone-arr/",
+      "disposition": "insufficient_published_evidence",
+      "raw_aircraft_audio": "flyover_spectra_and_engine_runup_pressure_described",
+      "receiver_position": "not_verified",
+      "sample_zero_utc": "not_verified",
+      "notes": "Publisher describes processed overhead spectra for flyovers and time-pressure data for engine runups. Full moving flyover waveforms and independent alignment were not verified. Do not equate stationary runups with Doppler passages."
+    },
+    {
+      "id": "wsu-uav",
+      "name": "WSU synchronized UAV acoustics",
+      "source": "https://research-data.westernsydney.edu.au/published/1f8cceb0801b11f189a547c836cf5bee/",
+      "disposition": "promising_separate_domain_not_qualified",
+      "raw_aircraft_audio": "drone_multichannel_WAV_advertised",
+      "receiver_position": "alignment_frame_advertised_not_verified",
+      "sample_zero_utc": "alignment_parameters_advertised_not_verified",
+      "notes": "Public catalog describes WAV, telemetry and per-session alignment files. Direct README requests returned HTTP 403 in this environment. Documentation/files not inspected; controlled drone experiments are separate from the ADS-B aircraft pilot."
+    },
+    {
+      "id": "truenoise",
+      "name": "TrueNoise observations",
+      "source": "https://truenoise.org/data.html",
+      "disposition": "insufficient_audio",
+      "raw_aircraft_audio": "not_advertised_in_reviewed_download",
+      "receiver_position": "observer_coordinates_advertised",
+      "sample_zero_utc": "observation_time_only",
+      "notes": "Reviewed download exports observation/psychoacoustic metrics as CSV. No raw pressure waveform was established for spectral Doppler reconstruction."
+    }
+  ],
+  "requirements": [
+    "Raw moving-aircraft waveform, long enough for unchanged discovery defaults.",
+    "Independent evidence of the microphone position and its uncertainty.",
+    "Documented mapping from waveform sample zero to trajectory time, with uncertainty.",
+    "Compatible timestamped trajectory geometry and vertical datum."
+  ],
+  "interpretation": "A finite evidence audit, not proof that no suitable public dataset exists. Unknown items remain unknown; extracted ridges, nearby coordinates and fitted clocks are not promoted to independent references."
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "case_id": "N759NC_R46",
+  "screen_report_sha256": "152253931eeff64f353a369b517b0a9bc00ee516696ae33c6adc3aa729375230",
+  "source_audio_sha256": "520153c1e15d1ebf75cb713ca3fb158ecd73594a5dd8a6490b1baee4e2a98036",
+  "measurements_sha256": "90434df1ed588eec8a07a6749727fa0b0f257ac2cfbb4988c0e63974f60f094f",
+  "discovery": {
+    "duration_s": 95.263671875,
+    "scanned_windows": 2,
+    "raw_proposals": 5,
+    "elapsed_s": 0.20336075000523124,
+    "config": {
+      "window_s": 90.0,
+      "stride_s": 60.0,
+      "min_duration_s": 20.0,
+      "min_prominence_db": 12.0,
+      "min_drop_fraction": 0.08,
+      "max_fit_rmse_hz": 2.5,
+      "bands": [
+        [
+          40.0,
+          100.0
+        ],
+        [
+          70.0,
+          170.0
+        ],
+        [
+          120.0,
+          280.0
+        ],
+        [
+          200.0,
+          450.0
+        ],
+        [
+          350.0,
+          800.0
+        ]
+      ]
+    },
+    "events": [
+      {
+        "id": "event-5b0029ff",
+        "start_s": 16.5,
+        "end_s": 85.5,
+        "duration_s": 69.0,
+        "frequency_start_hz": 95.1720979064703,
+        "frequency_end_hz": 69.53456177562475,
+        "prominence_db": 21.755050659179688,
+        "grouped_proposals": 4,
+        "tone_fit_rmse_hz": 0.4130446145038689,
+        "trend_explained_fraction": 0.9981498124801355,
+        "fitted_tone_hz": 80.15409396073902,
+        "approx_cpa_receive_s": 52.68374936972147,
+        "fit_converged": true
+      },
+      {
+        "id": "event-d9125e5c",
+        "start_s": 50.75,
+        "end_s": 78.0,
+        "duration_s": 27.25,
+        "frequency_start_hz": 405.125,
+        "frequency_end_hz": 351.26365533377975,
+        "prominence_db": 15.308719635009766,
+        "grouped_proposals": 1,
+        "tone_fit_rmse_hz": 0.6788020908107347,
+        "trend_explained_fraction": 0.998314764446347,
+        "fitted_tone_hz": 385.9307190177739,
+        "approx_cpa_receive_s": 57.95469070908886,
+        "fit_converged": true
+      }
+    ],
+    "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+  },
+  "analysis_code_sha256": {
+    "public_data.py": "0e2beba5137db4e226091fdfeba327e68df35a68bc0fc12e64e3a1e58fbd6c25",
+    "audio.py": "105b628c0d53dfa9fd60767e75ee84a5fc542584d0d4647d02199e0dbd77a079",
+    "discovery.py": "8c23272b97ac1651fba9e5a935b6d719a3efeba26b5093e58375fa5812649c1d"
+  },
+  "reconstruction": "Original WAV decoded with the saved detector configuration and unchanged audio/discovery code. All saved proposal metadata matched within numerical tolerance. Arrays were reconstructed; the original screening report contained summaries only."
+}

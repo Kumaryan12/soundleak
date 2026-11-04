@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "case_id": "N784MB_R04",
+  "screen_report_sha256": "152253931eeff64f353a369b517b0a9bc00ee516696ae33c6adc3aa729375230",
+  "source_audio_sha256": "c0366b111fbf82877bcaba53aa53a99602f9f5512513bc996e629aa04633d37e",
+  "measurements_sha256": "745efbdad1fd813327b12d12d62e983f9f4b45ff8f9ac2751445c8c5094f4859",
+  "discovery": {
+    "duration_s": 85.232666015625,
+    "scanned_windows": 2,
+    "raw_proposals": 3,
+    "elapsed_s": 0.1600952500011772,
+    "config": {
+      "window_s": 90.0,
+      "stride_s": 60.0,
+      "min_duration_s": 20.0,
+      "min_prominence_db": 12.0,
+      "min_drop_fraction": 0.08,
+      "max_fit_rmse_hz": 2.5,
+      "bands": [
+        [
+          40.0,
+          100.0
+        ],
+        [
+          70.0,
+          170.0
+        ],
+        [
+          120.0,
+          280.0
+        ],
+        [
+          200.0,
+          450.0
+        ],
+        [
+          350.0,
+          800.0
+        ]
+      ]
+    },
+    "events": [
+      {
+        "id": "event-70efaf4f",
+        "start_s": 2.0,
+        "end_s": 83.0,
+        "duration_s": 81.0,
+        "frequency_start_hz": 161.39882758259773,
+        "frequency_end_hz": 100.9699608553201,
+        "prominence_db": 24.589210510253906,
+        "grouped_proposals": 3,
+        "tone_fit_rmse_hz": 0.12199832915387236,
+        "trend_explained_fraction": 0.9999690220439262,
+        "fitted_tone_hz": 122.91580652446059,
+        "approx_cpa_receive_s": 43.58106725040615,
+        "fit_converged": true
+      }
+    ],
+    "interpretation": "Unconfirmed moving-tone proposals; heuristic thresholds, not an aircraft classifier."
+  },
+  "analysis_code_sha256": {
+    "public_data.py": "0e2beba5137db4e226091fdfeba327e68df35a68bc0fc12e64e3a1e58fbd6c25",
+    "audio.py": "105b628c0d53dfa9fd60767e75ee84a5fc542584d0d4647d02199e0dbd77a079",
+    "discovery.py": "8c23272b97ac1651fba9e5a935b6d719a3efeba26b5093e58375fa5812649c1d"
+  },
+  "reconstruction": "Original WAV decoded with the saved detector configuration and unchanged audio/discovery code. All saved proposal metadata matched within numerical tolerance. Arrays were reconstructed; the original screening report contained summaries only."
+}

@@ -1,0 +1,56 @@
+{
+  "source": "https://github.com/karolpiczak/ESC-50",
+  "creator": "Karol J. Piczak; original clips from Freesound contributors",
+  "license": "Dataset CC BY-NC 3.0; original source rights also apply",
+  "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+  "selection": "First filename in each of car_horn, train and clock_alarm, chosen before running sound inference.",
+  "clips": [
+    {
+      "filename": "1-17124-A-43.wav",
+      "fold": "1",
+      "target": "43",
+      "category": "car_horn",
+      "esc10": "False",
+      "src_file": "17124",
+      "take": "A",
+      "local_file": "car_horn.wav",
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/master/audio/1-17124-A-43.wav",
+      "sha256": "9d5e01e07a386ee36c2e73f40817d132a54d91c936eccc01414280abca5a4209",
+      "original_source_url": "https://freesound.org/s/17124/",
+      "verified_source_revision": "33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+      "pinned_source_url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/1-17124-A-43.wav"
+    },
+    {
+      "filename": "1-119125-A-45.wav",
+      "fold": "1",
+      "target": "45",
+      "category": "train",
+      "esc10": "False",
+      "src_file": "119125",
+      "take": "A",
+      "local_file": "train.wav",
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/master/audio/1-119125-A-45.wav",
+      "sha256": "d78fe04767546d49b741d9d7df6173152e06dcb4224d70f350c3cb73768f265d",
+      "original_source_url": "https://freesound.org/s/119125/",
+      "verified_source_revision": "33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+      "pinned_source_url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/1-119125-A-45.wav"
+    },
+    {
+      "filename": "1-13613-A-37.wav",
+      "fold": "1",
+      "target": "37",
+      "category": "clock_alarm",
+      "esc10": "False",
+      "src_file": "13613",
+      "take": "A",
+      "local_file": "clock_alarm.wav",
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/master/audio/1-13613-A-37.wav",
+      "sha256": "2e28b25e14611723cdcc0becfa36468a8d0329a0c141e4f1d894bd6bb5773f34",
+      "original_source_url": "https://freesound.org/s/13613/",
+      "verified_source_revision": "33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6",
+      "pinned_source_url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/1-13613-A-37.wav"
+    }
+  ],
+  "metadata_sha256": "ca660da60191a97de289983a05821c9382d852a38a2ba8428980816b68cf6246",
+  "verified_source_revision": "33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6"
+}

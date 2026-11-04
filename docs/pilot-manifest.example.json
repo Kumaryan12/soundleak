@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "cases": [],
+  "instructions": "Add frozen cases from public datasets or new recordings with independent reference evidence before evaluation. Each entry needs id, case_directory, and reference_file; paths are relative to this manifest. Reference JSON must document recorder position and recording-clock evidence. This empty template declares no completed pilot recordings."
+}

@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "source": "https://zenodo.org/records/23424278",
+  "creator": "Praveen Pathak",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "record_metadata_sha256": "888706d99c921317d90f176d3f45fbef693bbde2f9bef8b49788fcf6337c51e9",
+  "archives": [
+    {
+      "file": "Raw data_V_constant_H_constant.zip",
+      "bytes": 23096453,
+      "published_checksum": "md5:d34b32ae57477074d6e8563300a7fc19",
+      "sha256": "9c4b5500561dc97d69ff06e79d4aea313d663afd2b77f1f0ceeefc8d9a19b4d0"
+    },
+    {
+      "file": "Raw data_V_constant_H_varying.zip",
+      "bytes": 78526572,
+      "published_checksum": "md5:7dc6eb7cea1a8ee3a1e47b05e5340eb9",
+      "sha256": "2a1a7e2ca361fbf22c24ecb65cc5f17ee55732580f443d12f6c00a5e854b0dc8"
+    },
+    {
+      "file": "Raw data_V_varying_H_constant.zip",
+      "bytes": 9914340,
+      "published_checksum": "md5:1f6c6c3614d87882b1ace28e963fc272",
+      "sha256": "436f70a9a55ba4bf5e4a5d3df2ea19c176e39262f408624f3a3c9a3cabb10c3a"
+    },
+    {
+      "file": "Raw data_V_varying_H_varying.zip",
+      "bytes": 20903858,
+      "published_checksum": "md5:bf6f2e2f21ca54f3a07d5d72220efcff",
+      "sha256": "99b4296e5770cdefbfb6e5f5f0fd67ab9d25efd97fca7d0c3f8ced72c5fdc5c6"
+    }
+  ],
+  "clips": [
+    {
+      "id": "N373DF_R06",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N373DF_R06/audio.wav",
+      "uncompressed_bytes": 4794126
+    },
+    {
+      "id": "N394FX_R20",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N394FX_R20/audio.wav",
+      "uncompressed_bytes": 5810604
+    },
+    {
+      "id": "N4040_R12",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N4040_R12/audio.wav",
+      "uncompressed_bytes": 8824368
+    },
+    {
+      "id": "N413AK_R49",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N413AK_R49/audio.wav",
+      "uncompressed_bytes": 8949198
+    },
+    {
+      "id": "N757AH_R41",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N757AH_R41/audio.wav",
+      "uncompressed_bytes": 5418276
+    },
+    {
+      "id": "N784MB_R04",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N784MB_R04/audio.wav",
+      "uncompressed_bytes": 8182382
+    },
+    {
+      "id": "N788BM_R03",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N788BM_R03/audio.wav",
+      "uncompressed_bytes": 6530604
+    },
+    {
+      "id": "N916KT_R22",
+      "category": "V_constant_H_constant",
+      "archive": "Raw data_V_constant_H_constant.zip",
+      "member": "V_constant_H_constant/N916KT_R22/audio.wav",
+      "uncompressed_bytes": 7433400
+    },
+    {
+      "id": "N172EL_R35",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N172EL_R35/audio.wav",
+      "uncompressed_bytes": 12711942
+    },
+    {
+      "id": "N248LF_R14",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N248LF_R14/audio.wav",
+      "uncompressed_bytes": 14584402
+    },
+    {
+      "id": "N310MG_R23",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N310MG_R23/audio.wav",
+      "uncompressed_bytes": 5846270
+    },
+    {
+      "id": "N4004R_R19",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N4004R_R19/audio.wav",
+      "uncompressed_bytes": 9751680
+    },
+    {
+      "id": "N413AK_R05",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N413AK_R05/audio.wav",
+      "uncompressed_bytes": 13764090
+    },
+    {
+      "id": "N413AK_R16",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N413AK_R16/audio.wav",
+      "uncompressed_bytes": 14116400
+    },
+    {
+      "id": "N500MG_R17",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N500MG_R17/audio.wav",
+      "uncompressed_bytes": 7104048
+    },
+    {
+      "id": "N563FX_R21",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N563FX_R21/audio.wav",
+      "uncompressed_bytes": 12444452
+    },
+    {
+      "id": "N61NG_R37",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N61NG_R37/audio.wav",
+      "uncompressed_bytes": 7480880
+    },
+    {
+      "id": "N621KS_R18",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N621KS_R18/audio.wav",
+      "uncompressed_bytes": 6202924
+    },
+    {
+      "id": "N67WL_R59",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N67WL_R59/audio.wav",
+      "uncompressed_bytes": 17419838
+    },
+    {
+      "id": "N759NC_R46",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N759NC_R46/audio.wav",
+      "uncompressed_bytes": 9145358
+    },
+    {
+      "id": "N795MM_R13",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N795MM_R13/audio.wav",
+      "uncompressed_bytes": 7480876
+    },
+    {
+      "id": "N7PG_R60",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N7PG_R60/audio.wav",
+      "uncompressed_bytes": 10803824
+    },
+    {
+      "id": "N7RR_R30",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N7RR_R30/audio.wav",
+      "uncompressed_bytes": 10464998
+    },
+    {
+      "id": "N8085W_R27",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N8085W_R27/audio.wav",
+      "uncompressed_bytes": 7112404
+    },
+    {
+      "id": "N86LP_R01",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N86LP_R01/audio.wav",
+      "uncompressed_bytes": 10987054
+    },
+    {
+      "id": "N913TC_R15",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N913TC_R15/audio.wav",
+      "uncompressed_bytes": 9448522
+    },
+    {
+      "id": "N9393T_R02",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N9393T_R02/audio.wav",
+      "uncompressed_bytes": 13198892
+    },
+    {
+      "id": "N958JX_R50",
+      "category": "V_constant_H_varying",
+      "archive": "Raw data_V_constant_H_varying.zip",
+      "member": "V_constant_H_varying/N958JX_R50/audio.wav",
+      "uncompressed_bytes": 4544468
+    },
+    {
+      "id": "N456CS_R38",
+      "category": "V_varying_H_constant",
+      "archive": "Raw data_V_varying_H_constant.zip",
+      "member": "V_varying_H_constant/N456CS_R38/audio.wav",
+      "uncompressed_bytes": 11445804
+    },
+    {
+      "id": "N60RS_R11",
+      "category": "V_varying_H_constant",
+      "archive": "Raw data_V_varying_H_constant.zip",
+      "member": "V_varying_H_constant/N60RS_R11/audio.wav",
+      "uncompressed_bytes": 8840748
+    },
+    {
+      "id": "N748SP_R36",
+      "category": "V_varying_H_constant",
+      "archive": "Raw data_V_varying_H_constant.zip",
+      "member": "V_varying_H_constant/N748SP_R36/audio.wav",
+      "uncompressed_bytes": 6563374
+    },
+    {
+      "id": "N814SR_R07",
+      "category": "V_varying_H_constant",
+      "archive": "Raw data_V_varying_H_constant.zip",
+      "member": "V_varying_H_constant/N814SR_R07/audio.wav",
+      "uncompressed_bytes": 6167260
+    },
+    {
+      "id": "N1387U_R44",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N1387U_R44/audio.wav",
+      "uncompressed_bytes": 4010382
+    },
+    {
+      "id": "N231DT_R57",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N231DT_R57/audio.wav",
+      "uncompressed_bytes": 7683062
+    },
+    {
+      "id": "N2933A_R08",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N2933A_R08/audio.wav",
+      "uncompressed_bytes": 4695598
+    },
+    {
+      "id": "N3012N_R40",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N3012N_R40/audio.wav",
+      "uncompressed_bytes": 7665228
+    },
+    {
+      "id": "N451EE_R45",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N451EE_R45/audio.wav",
+      "uncompressed_bytes": 3902222
+    },
+    {
+      "id": "N451EE_R51",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N451EE_R51/audio.wav",
+      "uncompressed_bytes": 4437466
+    },
+    {
+      "id": "N662EZ_R48",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N662EZ_R48/audio.wav",
+      "uncompressed_bytes": 10126172
+    },
+    {
+      "id": "N9658K_R24",
+      "category": "V_varying_H_varying",
+      "archive": "Raw data_V_varying_H_varying.zip",
+      "member": "V_varying_H_varying/N9658K_R24/audio.wav",
+      "uncompressed_bytes": 10019176
+    }
+  ],
+  "selection": "Every raw audio.wav from all four release archives, sorted by archive and member name; no selection by detector output.",
+  "independent_localization_eligible": false,
+  "localization_limits": [
+    "Independent receiver coordinates have not been established.",
+    "UTC-stamped extracted ridge data does not establish the UTC time of WAV sample zero.",
+    "No flight catalog or reference coordinates enter this acoustic screen."
+  ]
+}

@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soundleak"
+version = "0.2.0"
+description = "Local aircraft Doppler matching experiments"
+requires-python = ">=3.11"
+dependencies = ["numpy>=2.0,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4", "streamlit>=1.66,<2", "requests>=2.32,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "playwright>=1.56,<2"]
+real = ["requests>=2.32,<3", "yt-dlp>=2026.10.26", "remotezip>=0.12,<1"]
+classify = ["onnxruntime>=1.23,<2", "requests>=2.32,<3"]
+
+[project.scripts]
+soundleak = "soundleak.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["soundleak*"]
+
+[tool.setuptools.package-data]
+soundleak = ["live_frontend/*.html", "live_frontend/*.css", "live_frontend/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
