@@ -13,6 +13,7 @@ dependencies = ["numpy>=2.0,<3", "scipy>=1.14,<2", "matplotlib>=3.9,<4", "stream
 dev = ["pytest>=8,<10", "playwright>=1.56,<2"]
 real = ["requests>=2.32,<3", "yt-dlp>=2026.10.26", "remotezip>=0.12,<1"]
 classify = ["onnxruntime>=1.23,<2", "requests>=2.32,<3"]
+reconstruct = ["torch>=2.6,<3"]
 
 [project.scripts]
 soundleak = "soundleak.cli:main"
@@ -21,7 +22,7 @@ soundleak = "soundleak.cli:main"
 include = ["soundleak*"]
 
 [tool.setuptools.package-data]
-soundleak = ["live_frontend/*.html", "live_frontend/*.css", "live_frontend/*.js"]
+soundleak = ["live_frontend/*.html", "live_frontend/*.css", "live_frontend/*.js", "reconstruction_frontend/*.html", "reconstruction_frontend/*.css", "reconstruction_frontend/*.js", "_vendor/*.txt"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

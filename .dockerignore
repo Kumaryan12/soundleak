@@ -12,6 +12,10 @@
 !scripts/
 !scripts/capture_wifi.py
 !scripts/capture_wifi.swift
+!scripts/fetch_wifi3d.py
+!scripts/run_wifi3d.py
+!scripts/export_wifi3d.py
+!requirements-reconstruction.txt
 !deploy/
 !deploy/requirements.txt
 !deploy/start.sh
@@ -46,6 +50,9 @@
 !outputs/live/
 !outputs/live/regional/
 !outputs/live/regional/**
+!outputs/wifi3d/
+!outputs/wifi3d/mmfi-reference/
+!outputs/wifi3d/mmfi-reference/**
 !outputs/evaluations/
 !outputs/evaluations/*.json
 !outputs/reviews/

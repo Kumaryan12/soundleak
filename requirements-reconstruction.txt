@@ -1,0 +1,6 @@
+# Optional offline inference environment; not installed by the hosted viewer.
+torch==2.15.0
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+requests==2.34.2

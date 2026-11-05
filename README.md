@@ -137,6 +137,13 @@ variation with a declared static reference. Download the collector from the app,
 or see [the Wi-Fi experiment guide](docs/wifi.md). This experiment does not detect
 or locate people; it does not collect CSI.
 
+The **Wi-Fi 3D replay** displays offline CSI2PointCloud predictions from six real
+MM-Fi frames alongside measured LiDAR and zero-input controls. Coordinates are
+standardized model units. The fixed first-frame baseline slightly outperforms
+the changing-input predictions in this sample; this is a working inference
+experiment, not independently validated scene reconstruction. See the
+[reproduction guide](docs/wifi3d.md).
+
 See [the hosting guide](docs/deployment.md) for Streamlit Community Cloud and
 Docker deployment. Use `streamlit_app.py` on Community Cloud to enable temporary,
 separate storage for each visitor's saved cases and review notes.
@@ -147,4 +154,6 @@ separate storage for each visitor's saved cases and review notes.
 - [SciPy: ShortTimeFFT](https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.ShortTimeFFT.html) — spectrogram implementation.
 - [OpenSky REST API](https://openskynetwork.github.io/opensky-api/rest.html) — possible external flight-data source. Access, authentication and historical coverage depend on the provider; its track endpoint returns sparse waypoints and is experimental.
 
-This implementation was written independently in this project. No external geolocation repository code is bundled.
+The aircraft Doppler implementation was written independently in this project.
+The optional Wi-Fi reconstruction runner includes the attributed MIT-licensed
+CSI2PointCloud architecture in `soundleak/_vendor/`; its license is bundled there.

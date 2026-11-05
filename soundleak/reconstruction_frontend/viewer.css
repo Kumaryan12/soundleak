@@ -1,0 +1,12 @@
+/* Recorded point-cloud viewer. */
+.sl-cloud{font:14px system-ui,sans-serif;color:#dbe5ef;background:#0b1520;border:1px solid #294052;border-radius:16px;padding:16px;box-sizing:border-box;width:100%}
+.sl-cloud-controls{display:flex;gap:8px;flex-wrap:wrap}
+.sl-cloud button{background:#162638;color:#dbe5ef;border:1px solid #365267;border-radius:8px;padding:9px 13px;cursor:pointer;font:inherit}
+.sl-cloud button[aria-pressed=true]{background:#51e0d2;color:#09202a;border-color:#51e0d2}
+.sl-cloud canvas{display:block;width:100%;height:430px;touch-action:none;cursor:grab}
+.sl-cloud canvas:active{cursor:grabbing}
+.sl-cloud-help{color:#a4b6c7;line-height:1.5;font-size:12px}
+.sl-cloud [data-cloud-caption]{line-height:1.5;min-height:42px;color:#bfcedb}
+@media(max-width:600px){.sl-cloud canvas{height:370px}
+.sl-cloud{padding:10px}
+.sl-cloud button{padding:8px;font-size:12px}}

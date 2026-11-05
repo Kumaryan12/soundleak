@@ -86,24 +86,30 @@ def show_results(events, result, origin, altitude, truth=None):
 
 with st.sidebar:
     st.markdown("### ◉ Soundleak")
-    mode = st.radio("Experiment", ["Soundleak Live", "Wi-Fi lab", "Research workbench", "Public recording review", "Real-world replay", "Synthetic demo", "Analyze recording"], key="experiment_mode")
-    st.caption("WI-FI SIGNAL EXPERIMENT" if mode == "Wi-Fi lab" else "AIRCRAFT DOPPLER LAB")
+    mode = st.radio("Experiment", ["Soundleak Live", "Wi-Fi 3D replay", "Wi-Fi lab", "Research workbench", "Public recording review", "Real-world replay", "Synthetic demo", "Analyze recording"], key="experiment_mode")
+    st.caption("RECORDED WI-FI RECONSTRUCTION" if mode == "Wi-Fi 3D replay" else "WI-FI SIGNAL EXPERIMENT" if mode == "Wi-Fi lab" else "AIRCRAFT DOPPLER LAB")
     st.divider()
     st.caption("Server-side analysis · no external inference API" if is_hosted() else "Local processing · no account needed")
-    st.write("Inspect signal variation on a stationary Wi-Fi link." if mode == "Wi-Fi lab" else
+    st.write("Compare a recorded Wi-Fi prediction with measured reference geometry." if mode == "Wi-Fi 3D replay" else
+             "Inspect signal variation on a stationary Wi-Fi link." if mode == "Wi-Fi lab" else
              "Match the changing pitch of a flyover to a known flight path.")
 
-st.markdown('<div class="eyebrow">' + ('WI-FI → LINK MEASUREMENTS → VARIATION' if mode == "Wi-Fi lab" else
+st.markdown('<div class="eyebrow">' + ('RECORDED CSI → MODEL → POINT CLOUD' if mode == "Wi-Fi 3D replay" else
+            'WI-FI → LINK MEASUREMENTS → VARIATION' if mode == "Wi-Fi lab" else
             'SOUND → MOTION → POSITION') + '</div>', unsafe_allow_html=True)
-st.title("Soundleak Live" if mode == "Soundleak Live" else "Wi-Fi signal lab" if mode == "Wi-Fi lab" else "Soundleak research workbench" if mode == "Research workbench" else
+st.title("Soundleak Live" if mode == "Soundleak Live" else "Wi-Fi 3D reconstruction" if mode == "Wi-Fi 3D replay" else "Wi-Fi signal lab" if mode == "Wi-Fi lab" else "Soundleak research workbench" if mode == "Research workbench" else
          "Public recording review" if mode == "Public recording review" else "A location hidden in the sound.")
 st.write("Hear the flyover. Follow the evidence. Watch the map update." if mode == "Soundleak Live" else
+         "Recorded public signals. Real model inference. Measured reference geometry." if mode == "Wi-Fi 3D replay" else
          "Capture your Mac’s Wi-Fi link. Inspect signal changes against a static reference." if mode == "Wi-Fi lab" else
          "Review acoustic events, compare aircraft, and inspect competing locations." if mode == "Research workbench" else
          "Listen to each recording, inspect the extracted ridges, and save your judgments." if mode == "Public recording review" else
          "Trace an aircraft’s Doppler curve. Test where a listener would have heard it.")
 
-if mode == "Wi-Fi lab":
+if mode == "Wi-Fi 3D replay":
+    from soundleak.ui_reconstruction import render_reconstruction
+    render_reconstruction()
+elif mode == "Wi-Fi lab":
     from soundleak.ui_wifi import render_wifi
     render_wifi()
 elif mode == "Soundleak Live":
@@ -244,5 +250,6 @@ else:
             st.error(str(exc))
 
 st.divider()
-st.caption("Research prototype · Wi-Fi RSSI diagnostics · Human presence and location are not inferred" if mode == "Wi-Fi lab" else
+st.caption("Noncommercial research replay · Standardized model coordinates · No independent reconstruction accuracy claim" if mode == "Wi-Fi 3D replay" else
+           "Research prototype · Wi-Fi RSSI diagnostics · Human presence and location are not inferred" if mode == "Wi-Fi lab" else
            "Research prototype · Automatic acoustic proposals with manual review · Finite regional fits, not calibrated location probabilities")

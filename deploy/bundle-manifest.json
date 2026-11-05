@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".dockerignore",
-      "bytes": 1343,
-      "sha256": "644fe02d3a9edb82e45f802eaaabe7c9ea7a16fa505bd5c94fb7d4c78c59ff95"
+      "bytes": 1533,
+      "sha256": "aea9649955c3b7439120cec5969170fee65b217854a4150dd2d29f27c263fd05"
     },
     {
       "path": ".gitignore",
@@ -23,13 +23,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 12211,
-      "sha256": "e6a903e5007d59587141779f7ae8e3273938f7624663db8c774b4576f09905df"
+      "bytes": 12759,
+      "sha256": "0f7ae7d9dbcac78b73e16155d9ce7baa6d48d35804a180c432eb5206c186b9e3"
     },
     {
       "path": "app.py",
-      "bytes": 17074,
-      "sha256": "9890ddba5fd8de6a2fe54115a3c05035423dd6a71b4c104f9c7b7aa8daa8d6a6"
+      "bytes": 17831,
+      "sha256": "654c5ab66c6840900d8acc62914b783c5ede99aa52292f489bcbf29a373624b5"
     },
     {
       "path": "data/real/models/yamnet-onnx/LICENSE",
@@ -3342,6 +3342,11 @@
       "sha256": "dd42ec757f7bea1eaf93c0e39e4d55b833d17cdeea5111e2a0b4f2ae05be4056"
     },
     {
+      "path": "docs/wifi3d.md",
+      "bytes": 6166,
+      "sha256": "3f520dbda8aa6ee823accdce50ddc12d6123819668684bfdf0ab72495540cbf0"
+    },
+    {
       "path": "docs/workbench.md",
       "bytes": 9430,
       "sha256": "39bb80253e99ac0bcac289dd189c4d63f9acd3c5a9cbc9ab97fec90f91b4cef8"
@@ -3822,19 +3827,99 @@
       "sha256": "3cefb780ad5cbd6309f12cae20729b076292390aa69cc07a7dfeabc67f29d6c4"
     },
     {
+      "path": "outputs/wifi3d/mmfi-reference/comparison.png",
+      "bytes": 416398,
+      "sha256": "20092b78776a0703260ce4bfb016014c8362e237616699508f85bcb6a47537cd"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame001-prediction.ply",
+      "bytes": 38253,
+      "sha256": "f3779ba541b4fa6685a538e41d8633990a0f4d2d6e60f72d92472ede0524f622"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame001-reference.ply",
+      "bytes": 36569,
+      "sha256": "3c7c083319c0f22863a970c4de22e669b222499f816796f72ae840f034903bfc"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame051-prediction.ply",
+      "bytes": 38254,
+      "sha256": "ef7a4ef775c89b8f5b9ae1fb0ab8fd4fc11d05a3c7c2bd8747bf67c33a1ac13a"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame051-reference.ply",
+      "bytes": 36570,
+      "sha256": "41dfa8d2c5d7b8d5304fc17c11665e405b91b03c7d0fa815b60f9d327fb1e4d8"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame101-prediction.ply",
+      "bytes": 38253,
+      "sha256": "0d4e1288cbff165503cdfa94081619376eafe83967cbb4c0a52be1ec4086fc1d"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame101-reference.ply",
+      "bytes": 36381,
+      "sha256": "4862e1c373b12021f245f2b123ea6aec7a7a0c21cf6743908a0e91d76f2e09c9"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame151-prediction.ply",
+      "bytes": 38254,
+      "sha256": "69c77ba266e732126defd61c1b8da0f34f2306cc6561321c36c0dd363b1322ae"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame151-reference.ply",
+      "bytes": 36089,
+      "sha256": "5e5fc64704d3344b5ab76701795efc15adf976bc4f76fc9c893653e715bf04ed"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame201-prediction.ply",
+      "bytes": 38253,
+      "sha256": "a012309e7e6d48bcc781e49b97302b75ded667e4d4484702770a7b216ce63928"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame201-reference.ply",
+      "bytes": 36733,
+      "sha256": "e325b15233051ec6927ebed918eccf140c6813665ba851c884617b6161b15332"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame251-prediction.ply",
+      "bytes": 38253,
+      "sha256": "45958bdc311e106424e8a48fef01d4bec6db5f3689392f0f87ebb2d4f8f9308f"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/frame251-reference.ply",
+      "bytes": 37306,
+      "sha256": "b906b8d384ae19010a08d1286212112aa10a1223b0226601c11c6d47c816a65d"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/reconstruction.json",
+      "bytes": 933751,
+      "sha256": "046445ff87a5fb2914fe247aaa3251653c4b279408b13f220692f9d0edc17aa5"
+    },
+    {
+      "path": "outputs/wifi3d/mmfi-reference/viewer.html",
+      "bytes": 942227,
+      "sha256": "16c5a9a8e62659ac46b69920fb8d06a916c443990b975d425611fefa8d211ff3"
+    },
+    {
       "path": "packages.txt",
       "bytes": 7,
       "sha256": "cfadbc1b87f5aa6d688a2d97920127e67ae6f4fa3c2dce69108a9ef7a7a87659"
     },
     {
       "path": "pyproject.toml",
-      "bytes": 820,
-      "sha256": "5e9d4b12d993418723790c1e9d81a3bda5eb692c3d1aa0b4474caf380ec4f915"
+      "bytes": 968,
+      "sha256": "e3abe8e0c94eeeb380c478e02091d376b1a5f951d70b59576f430e8efd3a7dce"
     },
     {
       "path": "railway.json",
       "bytes": 293,
       "sha256": "fd29f5715036b9aef29785fcc48ceb3b5e1d4ce791cfc47504cac104b6fc069c"
+    },
+    {
+      "path": "requirements-reconstruction.txt",
+      "bytes": 155,
+      "sha256": "1600eddd9984eb39f782dfc2afcd18fb81b2f1477e64ae663a636d1141fa07f7"
     },
     {
       "path": "requirements.txt",
@@ -3852,9 +3937,39 @@
       "sha256": "e7c729119055362f341bf9ef5ecc3e1aaace07ad8096cbc5ec58907aec40ab00"
     },
     {
+      "path": "scripts/export_wifi3d.py",
+      "bytes": 5532,
+      "sha256": "15fa08bf47c8aae45d3a60ce7124366646ed9a4c63b63745879b2b9de7294f61"
+    },
+    {
+      "path": "scripts/fetch_wifi3d.py",
+      "bytes": 7937,
+      "sha256": "4c8e7fd1aa3736225803ef5a5f8c0f51c1817173bcd841a5161a95f104bd710f"
+    },
+    {
+      "path": "scripts/run_wifi3d.py",
+      "bytes": 6897,
+      "sha256": "dd4df38e74bfe48fdb2645c2de4d5f5d47eac0d084de21028e96cc15b9de2c71"
+    },
+    {
       "path": "soundleak/__init__.py",
       "bytes": 78,
       "sha256": "df7cdcd09434e72dffb3e947a1bf386e03d1879c30506cbb874b6135419698e8"
+    },
+    {
+      "path": "soundleak/_vendor/CSI2POINTCLOUD_LICENSE.txt",
+      "bytes": 1077,
+      "sha256": "12cc644674961e588a19498ab819989c15453632914201bbc84ccbd1037dfe01"
+    },
+    {
+      "path": "soundleak/_vendor/__init__.py",
+      "bytes": 84,
+      "sha256": "277371365e6dc4b5c7ac7ecf3805ac2730c7abb13814f86eae2fd35b63196e14"
+    },
+    {
+      "path": "soundleak/_vendor/csi2pointcloud.py",
+      "bytes": 10905,
+      "sha256": "8e3053a26c6ca1db1d077af4b133519ff9d7c0f5dc3c360d00ce261689bb34b6"
     },
     {
       "path": "soundleak/archive.py",
@@ -3957,6 +4072,26 @@
       "sha256": "5629c35a33e99585251c8b0d13952ad5d6ad126f4df2949724f1e209ff1abbe5"
     },
     {
+      "path": "soundleak/reconstruction.py",
+      "bytes": 4906,
+      "sha256": "8556f4f5c540c99626b11374e5b3c58022a32e6b743fc01db4f2ea1d2783a727"
+    },
+    {
+      "path": "soundleak/reconstruction_frontend/viewer.css",
+      "bytes": 877,
+      "sha256": "79abcee55e4d0912054a148f5916a25263bd228d2bba2d9ce6215c671018f622"
+    },
+    {
+      "path": "soundleak/reconstruction_frontend/viewer.html",
+      "bytes": 729,
+      "sha256": "ffce756b0d78bc4309ef5885a0123717969f3daf550bc60cef444f3cf799a7a3"
+    },
+    {
+      "path": "soundleak/reconstruction_frontend/viewer.js",
+      "bytes": 4353,
+      "sha256": "23b3a543eeb5083a33c0ddb27b7979e4928d22f17f043adf4ede50930aa7af40"
+    },
+    {
       "path": "soundleak/regional.py",
       "bytes": 7932,
       "sha256": "d18c63c9f74eca88e12b55cb55c366b78d37c247b07f583adfb360a1e6132860"
@@ -3992,6 +4127,11 @@
       "sha256": "84c8dc3acc1f073273d868fe018297b5fd6b5ab67f17fecb9b15715a44b0af8d"
     },
     {
+      "path": "soundleak/ui_reconstruction.py",
+      "bytes": 4618,
+      "sha256": "e61b6970dabd1e676b50b16f916b661b94cd9cddfd0029f29bafc7b4daabab75"
+    },
+    {
       "path": "soundleak/ui_wifi.py",
       "bytes": 7062,
       "sha256": "69f3948cc7cf01956075da34dbefd7aa72b55a22e4d474d62ddf4c667c77147e"
@@ -4017,6 +4157,6 @@
       "sha256": "5b3372bf930ebe7beed5e31995ad876e45e3811881fcf91889a82f5108a5ddc6"
     }
   ],
-  "total_bytes": 555809718,
+  "total_bytes": 558607141,
   "excluded": "Virtualenv, raw daily tar parts, research scratch data, credentials, and private annotation/session files."
 }
