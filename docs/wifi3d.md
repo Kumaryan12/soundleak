@@ -8,6 +8,10 @@ LiDAR, reference position or reference normalization is passed into inference.
 
 The hosted **Wi-Fi 3D replay** displays these precomputed results. It does not
 collect signals from a visitor's router or execute the large model on each visit.
+Its **Evaluation lab** adds negative controls, temporal surface-change metrics,
+error-colored clouds and playback; the original replay remains available under
+**Original six-frame replay**. See [the evaluation guide](wifi3d-evaluation.md)
+for current measured results and the blocked multi-environment expansion.
 The **Wi-Fi lab** remains a separate Mac RSSI diagnostic tool; RSSI captures from
 that tool are not compatible with this model.
 

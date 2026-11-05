@@ -28,6 +28,22 @@ def digest(path):
     return h.hexdigest()
 
 
+def load_model(checkpoint):
+    """Load only the pinned model with restricted deserialization."""
+    if digest(checkpoint) != CHECKPOINT_SHA256:
+        raise ValueError('Checkpoint does not match the pinned research model.')
+    torch.set_num_threads(4)
+    torch.set_num_interop_threads(1)
+    torch.manual_seed(0)
+    with torch.serialization.safe_globals([(np._core.multiarray.scalar, 'numpy.core.multiarray.scalar'),
+                                           np.dtype, np.dtypes.Float64DType]):
+        state = torch.load(checkpoint, map_location='cpu', weights_only=True)
+    model = CSI2PointCloudModel(512, 4, 4, 4, 1200)
+    model.load_state_dict(state['model_state_dict'], strict=True)
+    model.eval()
+    return model, sorted(state)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--data', type=Path, default=ROOT/'data/real/wifi3d')
@@ -43,18 +59,7 @@ def main():
         path = args.data/entry['path']
         if digest(path) != entry['sha256']:
             parser.error('Recorded input integrity check failed: ' + entry['path'])
-    torch.set_num_threads(4)
-    torch.set_num_interop_threads(1)
-    torch.manual_seed(0)
-    # The checkpoint's loss is a NumPy scalar. Permit just the known NumPy
-    # scalar/dtype constructors while retaining weights_only restrictions.
-    with torch.serialization.safe_globals([(np._core.multiarray.scalar, 'numpy.core.multiarray.scalar'),
-                                           np.dtype, np.dtypes.Float64DType]):
-        state = torch.load(checkpoint, map_location='cpu', weights_only=True)
-    model = CSI2PointCloudModel(512, 4, 4, 4, 1200)
-    model.load_state_dict(state['model_state_dict'], strict=True)
-    model.eval()
-    del state
+    model, _ = load_model(checkpoint)
     args.output.mkdir(parents=True)
     frames = []
     with torch.inference_mode():

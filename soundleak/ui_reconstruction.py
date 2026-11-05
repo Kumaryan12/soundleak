@@ -22,11 +22,20 @@ def load_report(path, content_hash):
 @lru_cache(maxsize=1)
 def cloud_viewer():
     root = Path(__file__).with_name('reconstruction_frontend')
-    return component('soundleak_wifi3d_viewer', html=(root/'viewer.html').read_text(),
+    return component('soundleak_wifi3d_viewer_v2', html=(root/'viewer.html').read_text(),
                      css=(root/'viewer.css').read_text(), js=(root/'viewer.js').read_text())
 
 
 def render_reconstruction():
+    workspace = st.radio('Reconstruction workspace', ['Evaluation lab', 'Original six-frame replay'], horizontal=True)
+    if workspace == 'Evaluation lab':
+        from .ui_reconstruction_eval import render_evaluation
+        render_evaluation(cloud_viewer)
+        return
+    render_original_replay()
+
+
+def render_original_replay():
     st.info('Real recorded Wi-Fi CSI · Pretrained-model inference · Offline reconstruction replay')
     if not REPORT.exists():
         st.warning('The recorded reconstruction has not been prepared in this checkout.')

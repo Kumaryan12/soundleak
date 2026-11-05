@@ -144,6 +144,14 @@ the changing-input predictions in this sample; this is a working inference
 experiment, not independently validated scene reconstruction. See the
 [reproduction guide](docs/wifi3d.md).
 
+The **Evaluation lab** adds shuffled-CSI, zero-input and fixed-prediction controls,
+sampled-frame playback, surface-error colors, shape/change plots, and CSV/JSON/PLY
+exports. The current six-frame run still favors the fixed prediction. Training
+overlap is unverified; the different-environment control is explicitly unavailable
+while the official archive index download is quota-blocked. A fixed four-environment,
+96-frame fetch/evaluation workflow is ready for a later run. See the
+[evaluation guide and measured results](docs/wifi3d-evaluation.md).
+
 See [the hosting guide](docs/deployment.md) for Streamlit Community Cloud and
 Docker deployment. Use `streamlit_app.py` on Community Cloud to enable temporary,
 separate storage for each visitor's saved cases and review notes.

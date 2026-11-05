@@ -11,6 +11,7 @@ import io
 import json
 from pathlib import Path
 import struct
+import time
 import zipfile
 import zlib
 
@@ -43,28 +44,39 @@ def file_hash(path):
     return value.hexdigest()
 
 
-def range_bytes(client, start, count):
-    if start < 0 or count <= 0 or count > 150_000_000 or start + count > ARCHIVE_SIZE:
+def range_bytes(client, start, count, archive_id=ARCHIVE_ID, archive_size=ARCHIVE_SIZE):
+    if start < 0 or count <= 0 or count > 150_000_000 or start + count > archive_size:
         raise ValueError('Invalid or excessive archive range.')
     end = start + count - 1
-    params = {'id': ARCHIVE_ID, 'export': 'download', 'confirm': 't',
+    params = {'id': archive_id, 'export': 'download', 'confirm': 't',
               'soundleak_range': f'{start}-{end}'}
-    with client.get('https://drive.usercontent.google.com/download', params=params,
-                    headers={'Range': f'bytes={start}-{end}'}, stream=True, timeout=60) as response:
-        response.raise_for_status()
-        expected = f'bytes {start}-{end}/{ARCHIVE_SIZE}'
-        if response.status_code != 206 or response.headers.get('Content-Range') != expected:
-            raise ValueError('Archive server did not honor the requested range; refusing a full download.')
-        data = response.content
-        if len(data) != count:
-            raise ValueError('Truncated archive range.')
-        return data
+    for attempt in range(3):
+        with client.get('https://drive.usercontent.google.com/download', params=params,
+                        headers={'Range': f'bytes={start}-{end}'}, stream=True, timeout=60) as response:
+            response.raise_for_status()
+            expected = f'bytes {start}-{end}/{archive_size}'
+            if response.status_code == 206 and response.headers.get('Content-Range') == expected:
+                data = response.content
+                if len(data) != count:
+                    raise ValueError('Truncated archive range.')
+                return data
+            # Drive has intermittently returned a quota HTML page between valid
+            # range responses. Retry a bounded number of identical requests;
+            # never accept HTTP 200 archive bytes or consume a full archive.
+            html = 'text/html' in response.headers.get('Content-Type', '')
+            first = next(response.iter_content(4096), b'') if html else b''
+            if b'Quota exceeded' not in first or attempt == 2:
+                raise ValueError(f'Archive range refused: expected {expected}; got HTTP {response.status_code}, '
+                                 f'{response.headers.get("Content-Range")}, {response.headers.get("Content-Type")}. '
+                                 'Refusing a full download.')
+        time.sleep(2**attempt)
 
 
 class RangeFile(io.RawIOBase):
-    def __init__(self):
+    def __init__(self, archive_id=ARCHIVE_ID, archive_size=ARCHIVE_SIZE):
         self.pos = 0
         self.client = session()
+        self.archive_id, self.archive_size = archive_id, archive_size
 
     def seekable(self):
         return True
@@ -73,14 +85,14 @@ class RangeFile(io.RawIOBase):
         return self.pos
 
     def seek(self, offset, whence=0):
-        self.pos = offset if whence == 0 else self.pos + offset if whence == 1 else ARCHIVE_SIZE + offset
+        self.pos = offset if whence == 0 else self.pos + offset if whence == 1 else self.archive_size + offset
         return self.pos
 
     def read(self, count=-1):
-        count = min(count if count >= 0 else ARCHIVE_SIZE - self.pos, ARCHIVE_SIZE - self.pos)
+        count = min(count if count >= 0 else self.archive_size - self.pos, self.archive_size - self.pos)
         if count <= 0:
             return b''
-        data = range_bytes(self.client, self.pos, count)
+        data = range_bytes(self.client, self.pos, count, self.archive_id, self.archive_size)
         self.pos += count
         return data
 
@@ -89,19 +101,22 @@ class RangeFile(io.RawIOBase):
         super().close()
 
 
-def subset_index():
-    prefix = 'E01/S05/A05/'
-    with RangeFile() as source, zipfile.ZipFile(source) as archive:
+def subset_index(prefixes=('E01/S05/A05/',), archive_id=ARCHIVE_ID, archive_size=ARCHIVE_SIZE):
+    with RangeFile(archive_id, archive_size) as source, zipfile.ZipFile(source) as archive:
         return [{'name': p.filename, 'offset': p.header_offset, 'compressed': p.compress_size,
                  'size': p.file_size, 'crc': p.CRC, 'compression': p.compress_type}
-                for p in archive.infolist() if p.filename.startswith(prefix)
+                for p in archive.infolist() if p.filename.startswith(tuple(prefixes))
                 and p.filename.endswith(('.mat', '.bin'))]
 
 
-def fetch_member(entry, root):
-    # Names must belong to the fixed selected recording, not arbitrary archive paths.
+def fetch_member(entry, root, recording='E01/S05/A05', archive_id=ARCHIVE_ID, archive_size=ARCHIVE_SIZE):
+    # Only the explicitly selected recording, with a fixed modality and filename.
     path = Path(entry['name'])
-    if path.parts[:3] != ('E01', 'S05', 'A05') or '..' in path.parts:
+    import re
+    if (len(path.parts) != 5 or '/'.join(path.parts[:3]) != recording or '..' in path.parts
+            or not re.fullmatch(r'E0[1-4]/S\d{2}/A\d{2}', recording)
+            or not ((path.parts[3] == 'wifi-csi' and re.fullmatch(r'frame\d{3}\.mat', path.name))
+                    or (path.parts[3] == 'lidar' and re.fullmatch(r'frame\d{3}\.bin', path.name)))):
         raise ValueError('Unexpected member path.')
     target = root/path
     if target.exists() and target.stat().st_size == entry['size']:
@@ -109,12 +124,12 @@ def fetch_member(entry, root):
         if zlib.crc32(data) & 0xffffffff == entry['crc']:
             return {'path': str(path), 'bytes': len(data), 'sha256': sha256(data).hexdigest()}
     with session() as client:
-        header = range_bytes(client, entry['offset'], 30)
+        header = range_bytes(client, entry['offset'], 30, archive_id, archive_size)
         if header[:4] != b'PK\x03\x04':
             raise ValueError('Invalid ZIP member header.')
         name_length, extra_length = struct.unpack_from('<HH', header, 26)
         offset = entry['offset'] + 30 + name_length + extra_length
-        compressed = range_bytes(client, offset, entry['compressed'])
+        compressed = range_bytes(client, offset, entry['compressed'], archive_id, archive_size)
     if entry['compression'] == zipfile.ZIP_DEFLATED:
         data = zlib.decompress(compressed, -15)
     elif entry['compression'] == zipfile.ZIP_STORED:

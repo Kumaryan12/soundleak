@@ -15,6 +15,9 @@
 !scripts/fetch_wifi3d.py
 !scripts/run_wifi3d.py
 !scripts/export_wifi3d.py
+!scripts/fetch_wifi3d_suite.py
+!scripts/evaluate_wifi3d.py
+!scripts/export_wifi3d_evaluation.py
 !requirements-reconstruction.txt
 !deploy/
 !deploy/requirements.txt
@@ -53,6 +56,8 @@
 !outputs/wifi3d/
 !outputs/wifi3d/mmfi-reference/
 !outputs/wifi3d/mmfi-reference/**
+!outputs/wifi3d/evaluation/
+!outputs/wifi3d/evaluation/**
 !outputs/evaluations/
 !outputs/evaluations/*.json
 !outputs/reviews/

@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".dockerignore",
-      "bytes": 1533,
-      "sha256": "aea9649955c3b7439120cec5969170fee65b217854a4150dd2d29f27c263fd05"
+      "bytes": 1687,
+      "sha256": "4795dcea9398de197b88da1e3e1de0abf8daaedb04843cbd90818665a21c05aa"
     },
     {
       "path": ".gitignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12759,
-      "sha256": "0f7ae7d9dbcac78b73e16155d9ce7baa6d48d35804a180c432eb5206c186b9e3"
+      "bytes": 13312,
+      "sha256": "c6ca3ae106c0b2b5420bbd3f58f85d4a4db489424b00de1f4afc867ee99c688e"
     },
     {
       "path": "app.py",
@@ -3337,14 +3337,24 @@
       "sha256": "bfd5d6333d4b14b93e8a782d3b7c8530f63902245ea9816e9a97f4da983ec676"
     },
     {
+      "path": "docs/research/csi2pointcloud-config.yaml",
+      "bytes": 2069,
+      "sha256": "a3895505cb5032a3bc1eaa44198ff64378f64368c1b61a576cb182d0bbecdebc"
+    },
+    {
       "path": "docs/wifi.md",
       "bytes": 4363,
       "sha256": "dd42ec757f7bea1eaf93c0e39e4d55b833d17cdeea5111e2a0b4f2ae05be4056"
     },
     {
+      "path": "docs/wifi3d-evaluation.md",
+      "bytes": 8311,
+      "sha256": "5ffed53d22ec53be6b7b726cfbbdeec57bd119fc32c85592ff744a6ebaffc2cc"
+    },
+    {
       "path": "docs/wifi3d.md",
-      "bytes": 6166,
-      "sha256": "3f520dbda8aa6ee823accdce50ddc12d6123819668684bfdf0ab72495540cbf0"
+      "bytes": 6479,
+      "sha256": "fcdb3aa11f4cd2d22345a4343263f3ff4e4fc2910215f32b38b61de26270bcc8"
     },
     {
       "path": "docs/workbench.md",
@@ -3827,6 +3837,26 @@
       "sha256": "3cefb780ad5cbd6309f12cae20729b076292390aa69cc07a7dfeabc67f29d6c4"
     },
     {
+      "path": "outputs/wifi3d/evaluation/E01-S05-A05.json",
+      "bytes": 929431,
+      "sha256": "ec9e8f84601a6d503aba80695c0a0127300b9bc35564cd6167edd6756af0db9d"
+    },
+    {
+      "path": "outputs/wifi3d/evaluation/evaluation.json",
+      "bytes": 12190,
+      "sha256": "2f7cc461bf9e5d458e0bf94a774bc75b1c5a8411cccd0cb274b3744b1b3b3ccd"
+    },
+    {
+      "path": "outputs/wifi3d/evaluation/evaluation.png",
+      "bytes": 232218,
+      "sha256": "4bd56af231934dd437754a1116a86c685f5762171cac52e38600e29841b84e07"
+    },
+    {
+      "path": "outputs/wifi3d/evaluation/frame-scores.csv",
+      "bytes": 1554,
+      "sha256": "f930a2a87a4d8252f6c15d1821729279806c0ab1f54f5b75de246bbf34c5ec0e"
+    },
+    {
       "path": "outputs/wifi3d/mmfi-reference/comparison.png",
       "bytes": 416398,
       "sha256": "20092b78776a0703260ce4bfb016014c8362e237616699508f85bcb6a47537cd"
@@ -3937,19 +3967,39 @@
       "sha256": "e7c729119055362f341bf9ef5ecc3e1aaace07ad8096cbc5ec58907aec40ab00"
     },
     {
+      "path": "scripts/evaluate_wifi3d.py",
+      "bytes": 11693,
+      "sha256": "c51482d72ca8ec01e7a47670f98a90ccc10bce615e7f487eab557feb5c71b0b7"
+    },
+    {
       "path": "scripts/export_wifi3d.py",
       "bytes": 5532,
       "sha256": "15fa08bf47c8aae45d3a60ce7124366646ed9a4c63b63745879b2b9de7294f61"
     },
     {
+      "path": "scripts/export_wifi3d_evaluation.py",
+      "bytes": 3601,
+      "sha256": "730a6e5e0bfca49ebff4107ae17dbcea3ba22c990a78d4afbe1489df8c129812"
+    },
+    {
       "path": "scripts/fetch_wifi3d.py",
-      "bytes": 7937,
-      "sha256": "4c8e7fd1aa3736225803ef5a5f8c0f51c1817173bcd841a5161a95f104bd710f"
+      "bytes": 9425,
+      "sha256": "1ca8e4bde0ef0015ede17433dd3a7ddf8b7650dc88981a961088411165b4925c"
+    },
+    {
+      "path": "scripts/fetch_wifi3d_suite.py",
+      "bytes": 3440,
+      "sha256": "369c250fc865049a3463818b1d6654d0eb2cd1bf2b772474d052c8afb48a6a5f"
+    },
+    {
+      "path": "scripts/prepare_deployment.py",
+      "bytes": 4527,
+      "sha256": "9da9b5294654ce34cdb1eadda59cc9607bee4c6de365c3ed60278a1cb4650739"
     },
     {
       "path": "scripts/run_wifi3d.py",
-      "bytes": 6897,
-      "sha256": "dd4df38e74bfe48fdb2645c2de4d5f5d47eac0d084de21028e96cc15b9de2c71"
+      "bytes": 7032,
+      "sha256": "2befb13cbd1d28b8a7a615b9a976948959c4ffda3be4a610d767ed978947b373"
     },
     {
       "path": "soundleak/__init__.py",
@@ -4077,19 +4127,24 @@
       "sha256": "8556f4f5c540c99626b11374e5b3c58022a32e6b743fc01db4f2ea1d2783a727"
     },
     {
+      "path": "soundleak/reconstruction_eval.py",
+      "bytes": 9427,
+      "sha256": "e8be2943a5d39df7d475d624c3e0e2514351768d953c37f3413f4b84133f58fc"
+    },
+    {
       "path": "soundleak/reconstruction_frontend/viewer.css",
       "bytes": 877,
       "sha256": "79abcee55e4d0912054a148f5916a25263bd228d2bba2d9ce6215c671018f622"
     },
     {
       "path": "soundleak/reconstruction_frontend/viewer.html",
-      "bytes": 729,
-      "sha256": "ffce756b0d78bc4309ef5885a0123717969f3daf550bc60cef444f3cf799a7a3"
+      "bytes": 810,
+      "sha256": "3099fa01a507b052dc5bb540b96213c6e25a084b94caba7c619a91c38526abc4"
     },
     {
       "path": "soundleak/reconstruction_frontend/viewer.js",
-      "bytes": 4353,
-      "sha256": "23b3a543eeb5083a33c0ddb27b7979e4928d22f17f043adf4ede50930aa7af40"
+      "bytes": 6209,
+      "sha256": "28743da8f3657716bd974ecbeee852955350fb9d55a61e042cfb7d18790b7e01"
     },
     {
       "path": "soundleak/regional.py",
@@ -4128,8 +4183,13 @@
     },
     {
       "path": "soundleak/ui_reconstruction.py",
-      "bytes": 4618,
-      "sha256": "e61b6970dabd1e676b50b16f916b661b94cd9cddfd0029f29bafc7b4daabab75"
+      "bytes": 4956,
+      "sha256": "f95cdecdccdc266470c9821ff5a0ba4035487203b620a8fbe17ea56063a91711"
+    },
+    {
+      "path": "soundleak/ui_reconstruction_eval.py",
+      "bytes": 12338,
+      "sha256": "f679a54ca74e3de83d7887443a541f7054edb8c8515574e4278a20e3d0799323"
     },
     {
       "path": "soundleak/ui_wifi.py",
@@ -4155,8 +4215,23 @@
       "path": "streamlit_app.py",
       "bytes": 387,
       "sha256": "5b3372bf930ebe7beed5e31995ad876e45e3811881fcf91889a82f5108a5ddc6"
+    },
+    {
+      "path": "tests/test_reconstruction.py",
+      "bytes": 3066,
+      "sha256": "af1a212d01ac36a754a8d5c9bda3aeaa0ed301a0f0c7d8221bada6f13b8ab5cf"
+    },
+    {
+      "path": "tests/test_reconstruction_eval.py",
+      "bytes": 6401,
+      "sha256": "d80e73a34763c9f3fb9d8035026c0e9a46b3235fe1d9076c4b33484a36218561"
+    },
+    {
+      "path": "tests/test_wifi3d_fetch.py",
+      "bytes": 2410,
+      "sha256": "8281901b6260b141969850b58f20291ef76d58555db8a009ddd7ad4da33ccdab"
     }
   ],
-  "total_bytes": 558607141,
+  "total_bytes": 559854735,
   "excluded": "Virtualenv, raw daily tar parts, research scratch data, credentials, and private annotation/session files."
 }
