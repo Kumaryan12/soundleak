@@ -18,6 +18,7 @@
 !scripts/fetch_wifi3d_suite.py
 !scripts/evaluate_wifi3d.py
 !scripts/export_wifi3d_evaluation.py
+!scripts/train_wifi3d.py
 !requirements-reconstruction.txt
 !deploy/
 !deploy/requirements.txt

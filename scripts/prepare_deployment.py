@@ -36,6 +36,7 @@ def prepare(destination):
            'scripts/fetch_wifi3d.py','scripts/run_wifi3d.py','scripts/export_wifi3d.py',
            'scripts/fetch_wifi3d_suite.py','scripts/evaluate_wifi3d.py','scripts/export_wifi3d_evaluation.py',
            'scripts/prepare_deployment.py',
+           'scripts/train_wifi3d.py', 'tests/test_reconstruction_train.py',
            'tests/test_reconstruction.py','tests/test_reconstruction_eval.py','tests/test_wifi3d_fetch.py',
            'requirements-reconstruction.txt']
     for name in files:copy_file(name,destination)

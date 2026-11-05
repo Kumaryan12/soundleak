@@ -152,6 +152,12 @@ while the official archive index download is quota-blocked. A fixed four-environ
 96-frame fetch/evaluation workflow is ready for a later run. See the
 [evaluation guide and measured results](docs/wifi3d-evaluation.md).
 
+An optional [training pipeline](docs/wifi3d-training.md) trains a compact CSI-to-point-cloud
+model from random initialization. A completed local six-frame optimization check
+is explicitly diagnostic-only. Normal training requires disjoint training,
+validation and final-test environments; raw recordings and diagnostic weights
+are excluded from the hosted bundle.
+
 See [the hosting guide](docs/deployment.md) for Streamlit Community Cloud and
 Docker deployment. Use `streamlit_app.py` on Community Cloud to enable temporary,
 separate storage for each visitor's saved cases and review notes.

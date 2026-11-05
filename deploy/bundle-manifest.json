@@ -3,8 +3,8 @@
   "files": [
     {
       "path": ".dockerignore",
-      "bytes": 1687,
-      "sha256": "4795dcea9398de197b88da1e3e1de0abf8daaedb04843cbd90818665a21c05aa"
+      "bytes": 1712,
+      "sha256": "99a6820eaedaddfc5154672f2ff145a86885519ea329e1ea85325c7ac83b4d1f"
     },
     {
       "path": ".gitignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13312,
-      "sha256": "c6ca3ae106c0b2b5420bbd3f58f85d4a4db489424b00de1f4afc867ee99c688e"
+      "bytes": 13677,
+      "sha256": "ba0ce51f1b81457f7ab0f58e67e878bcca5d0c600edf8a9e5e746146c3858073"
     },
     {
       "path": "app.py",
@@ -3352,6 +3352,11 @@
       "sha256": "5ffed53d22ec53be6b7b726cfbbdeec57bd119fc32c85592ff744a6ebaffc2cc"
     },
     {
+      "path": "docs/wifi3d-training.md",
+      "bytes": 6081,
+      "sha256": "8a9ec6f0e7b5e2e187c4b8a33664f80695bd361dda44714fe8d6d9ecbf9ccfe2"
+    },
+    {
       "path": "docs/wifi3d.md",
       "bytes": 6479,
       "sha256": "fcdb3aa11f4cd2d22345a4343263f3ff4e4fc2910215f32b38b61de26270bcc8"
@@ -3993,13 +3998,18 @@
     },
     {
       "path": "scripts/prepare_deployment.py",
-      "bytes": 4527,
-      "sha256": "9da9b5294654ce34cdb1eadda59cc9607bee4c6de365c3ed60278a1cb4650739"
+      "bytes": 4603,
+      "sha256": "2be72130ac7245bf3652b737ca2c722f46a21107533b8436c1555572572402a3"
     },
     {
       "path": "scripts/run_wifi3d.py",
       "bytes": 7032,
       "sha256": "2befb13cbd1d28b8a7a615b9a976948959c4ffda3be4a610d767ed978947b373"
+    },
+    {
+      "path": "scripts/train_wifi3d.py",
+      "bytes": 10957,
+      "sha256": "00bb3d610b2010dabcff359bedb3b9e57a6fafa4180deb25b2a8dacff069283c"
     },
     {
       "path": "soundleak/__init__.py",
@@ -4147,6 +4157,11 @@
       "sha256": "28743da8f3657716bd974ecbeee852955350fb9d55a61e042cfb7d18790b7e01"
     },
     {
+      "path": "soundleak/reconstruction_train.py",
+      "bytes": 5799,
+      "sha256": "a4539ca1ce56d054a462482f03ee31241cea638244e6acd16aa2f2b74016a09c"
+    },
+    {
       "path": "soundleak/regional.py",
       "bytes": 7932,
       "sha256": "d18c63c9f74eca88e12b55cb55c366b78d37c247b07f583adfb360a1e6132860"
@@ -4227,11 +4242,16 @@
       "sha256": "d80e73a34763c9f3fb9d8035026c0e9a46b3235fe1d9076c4b33484a36218561"
     },
     {
+      "path": "tests/test_reconstruction_train.py",
+      "bytes": 3081,
+      "sha256": "15d27c14f9c494b81ecfebea807d995854a8fdf69183f74029f3da920610197f"
+    },
+    {
       "path": "tests/test_wifi3d_fetch.py",
       "bytes": 2410,
       "sha256": "8281901b6260b141969850b58f20291ef76d58555db8a009ddd7ad4da33ccdab"
     }
   ],
-  "total_bytes": 559854747,
+  "total_bytes": 559881131,
   "excluded": "Virtualenv, raw daily tar parts, research scratch data, credentials, and private annotation/session files."
 }
