@@ -1,4 +1,4 @@
-"""Community Cloud entrypoint with hosted session storage enabled."""
+"""Community Cloud entrypoint for audio and recorded Wi-Fi evaluation labs."""
 import os
 from pathlib import Path
 import runpy
